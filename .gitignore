@@ -1,0 +1,54 @@
+# KiCad
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups/
+*.lck
+~*.lck
+*.kicad_prl
+.history/
+fp-info-cache
+sym-lib-table.bak
+fp-lib-table.bak
+
+# PlatformIO
+.pio/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Generated fab outputs (re-exportable)
+hardware/*/production/
+hardware/orders/*.zip
+
+# Cloned reference projects
+references/*/
+!references/README.md
+
+node_modules/
+
+# Manual KiCad snapshots / scratch (use git history instead)
+*.kicad_pcb.pre-*
+*.kicad_sch.pre-*
+*.kicad_*.orig
+*.xiao-bak
+*.onboard-rejected
+*.bak
+*.dsn
+*.ses
+_scratch_*
+_staged_*
+hardware/hardware-puck-carrier/analysis/*/
+!hardware/hardware-puck-carrier/analysis/manifest.json
+delete/

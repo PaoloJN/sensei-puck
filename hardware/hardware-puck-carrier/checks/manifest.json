@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-10-11T05:52:55.225136+00:00",
+  "cad_gate": "FAIL",
+  "physical_validation": "NOT PERFORMED",
+  "counts": {
+    "erc_errors": 0,
+    "erc_warnings": 4,
+    "drc_errors": 0,
+    "drc_warnings": 23,
+    "unconnected_items": 131,
+    "schematic_parity": 0,
+    "topology_errors": 0
+  },
+  "topology_errors": [],
+  "sources": {
+    "puck-carrier.kicad_sch": "0a347225d460560923bdec27f49946dd9a8095b35ea186e3db49c3b1ae8f7dcf",
+    "puck-carrier.kicad_pcb": "57667b887b35a996b1cac4accf3ff9f5ceb76ab2f25239519013e8b724a4e461",
+    "puck-carrier.kicad_pro": "a810e1bc27a24f6e5adfc518c133ffbd8dba60b7caefbf940a2b87b2298b60a4"
+  }
+}

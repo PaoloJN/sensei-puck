@@ -1,0 +1,39 @@
+#VRML V2.0 utf8
+# AS7341 spectral sensor, ams OLGA-8 2 x 3.1 x 1.0 mm — simplified cosmetic model
+# Dark body + lighter optical window on top. Centered on footprint origin
+# (matches stock AMS_OLGA-8_2x3.1mm_P0.8mm outline: X +-1.0, Y +-1.55).
+# Scale: 1 VRML unit = 2.54 mm (KiCad convention).
+
+# --- body (dark) ---
+Transform {
+  translation 0 0 0.19685
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.12 0.12 0.12
+          specularColor 0.15 0.15 0.15
+          shininess 0.30
+        }
+      }
+      geometry Box { size 0.78740 1.22047 0.39370 }
+    }
+  ]
+}
+
+# --- optical window (lighter, slightly proud of the top face) ---
+Transform {
+  translation 0 0 0.40551
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.45 0.48 0.55
+          specularColor 0.70 0.70 0.75
+          shininess 0.80
+        }
+      }
+      geometry Box { size 0.31496 0.55118 0.02362 }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "project": "puck-carrier.kicad_pro",
+  "current": "2026-09-03_0057",
+  "runs": {
+    "2026-09-03_0057": {
+      "source_hashes": {
+        "puck-carrier.kicad_pcb": "sha256:1b6be2c30dbbb2280a53cac806d6e1e3800d20ee0624c9b1602fdd4396d450bb",
+        "puck-carrier.kicad_sch": "sha256:9203e1b4785faa6cb590e42dc1b77ea7467e228930a8ac49e3fad95b2b13113f",
+        "schematic.json": "sha256:2f406881c9603a4ca1f961ff7ad29c0ba9894c0adaf715f56a3b6060de284029",
+        "pcb.json": "sha256:93e24045ce3528d9a9864a6a983cdf82dd102ac1d81cef9c10df3d80119d7498"
+      },
+      "outputs": {
+        "pcb": "pcb.json",
+        "schematic": "schematic.json",
+        "emc": "emc.json"
+      },
+      "scripts": {
+        "pcb": "analyze_pcb.py puck-carrier.kicad_pcb"
+      },
+      "generated": "2026-09-03T01:06:08-04:00",
+      "pinned": false
+    }
+  }
+}

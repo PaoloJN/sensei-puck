@@ -1,0 +1,118 @@
+Reference,Value,Footprint,Population
+C1,4.7uF X7R,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,MPN/assembly quote review required
+C10,100nF,Capacitor_SMD:C_0402_1005Metric,MPN/assembly quote review required
+C11,100nF,Capacitor_SMD:C_0402_1005Metric,MPN/assembly quote review required
+C12,DNP tune NFC C0G,Capacitor_SMD:C_0402_1005Metric,DNP
+C13,DNP tune NFC C0G,Capacitor_SMD:C_0402_1005Metric,DNP
+C14,1uF,Capacitor_SMD:C_0402_1005Metric,MPN/assembly quote review required
+C15,1uF,Capacitor_SMD:C_0402_1005Metric,MPN/assembly quote review required
+C16,100nF,Capacitor_SMD:C_0402_1005Metric,MPN/assembly quote review required
+C17,1uF,Capacitor_SMD:C_0402_1005Metric,MPN/assembly quote review required
+C18,100nF,Capacitor_SMD:C_0402_1005Metric,MPN/assembly quote review required
+C19,100nF,Capacitor_SMD:C_0402_1005Metric,MPN/assembly quote review required
+C2,4.7uF X7R,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,MPN/assembly quote review required
+C20,100nF,Capacitor_SMD:C_0402_1005Metric,MPN/assembly quote review required
+C21,100nF,Capacitor_SMD:C_0402_1005Metric,MPN/assembly quote review required
+C22,100nF,Capacitor_SMD:C_0402_1005Metric,MPN/assembly quote review required
+C23,100nF,Capacitor_SMD:C_0402_1005Metric,MPN/assembly quote review required
+C24,10uF 16V X7R,Capacitor_SMD:C_1206_3216Metric,MPN/assembly quote review required
+C25,10uF 16V X7R,Capacitor_SMD:C_1206_3216Metric,MPN/assembly quote review required
+C3,100uF,Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder,MPN/assembly quote review required
+C5,22uF 16V,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,MPN/assembly quote review required
+C6,22uF 16V,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,MPN/assembly quote review required
+C7,100nF,Capacitor_SMD:C_0402_1005Metric,MPN/assembly quote review required
+C8,100nF,Capacitor_SMD:C_0402_1005Metric,MPN/assembly quote review required
+C9,100nF,Capacitor_SMD:C_0402_1005Metric,MPN/assembly quote review required
+CP1,PAD_GND,puck:CHG_Pad_D2.0mm,PCB feature
+CP2,PAD_DM,puck:CHG_Pad_D2.0mm,PCB feature
+CP3,PAD_DP,puck:CHG_Pad_D2.0mm,PCB feature
+CP4,PAD_5V,puck:CHG_Pad_D2.0mm,PCB feature
+D1,67-21/T2C-ZV1W2E/2T,puck:LED_Everlight_67-21_PLCC2,MPN/assembly quote review required
+D10,XL-1010RGBC,puck:LED_XL-1010RGBC,MPN/assembly quote review required
+D11,XL-1010RGBC,puck:LED_XL-1010RGBC,MPN/assembly quote review required
+D12,XL-1010RGBC,puck:LED_XL-1010RGBC,MPN/assembly quote review required
+D13,XL-1010RGBC,puck:LED_XL-1010RGBC,MPN/assembly quote review required
+D14,XL-1010RGBC,puck:LED_XL-1010RGBC,MPN/assembly quote review required
+D15,XL-1010RGBC,puck:LED_XL-1010RGBC,MPN/assembly quote review required
+D16,XL-1010RGBC,puck:LED_XL-1010RGBC,MPN/assembly quote review required
+D17,XL-1010RGBC,puck:LED_XL-1010RGBC,MPN/assembly quote review required
+D18,XL-1010RGBC,puck:LED_XL-1010RGBC,MPN/assembly quote review required
+D19,XL-1010RGBC,puck:LED_XL-1010RGBC,MPN/assembly quote review required
+D2,HIR67-21C/L11/TR8,puck:LED_Everlight_67-21_PLCC2,MPN/assembly quote review required
+D20,XL-1010RGBC,puck:LED_XL-1010RGBC,MPN/assembly quote review required
+D21,XL-1010RGBC,puck:LED_XL-1010RGBC,MPN/assembly quote review required
+D3,VLMU1610-365-135,puck:LED_Vishay_VLMU1610,MPN/assembly quote review required
+D6,SS14,Diode_SMD:D_SOD-123,MPN/assembly quote review required
+D8,STATUS 0603,LED_SMD:LED_0603_1608Metric,MPN/assembly quote review required
+D9,1N5819WS/SS14 ring supply,Diode_SMD:D_SOD-123,MPN/assembly quote review required
+E1,ELECTRODE_A,puck:EC_Electrode_2x8mm,PCB feature
+E2,ELECTRODE_B,puck:EC_Electrode_2x8mm,PCB feature
+E3,EC_FORCE_A,puck:EC_Electrode_2x8mm,PCB feature
+E4,EC_FORCE_B,puck:EC_Electrode_2x8mm,PCB feature
+E5,AUX_PH,puck:AUX_Pad_D3.0mm,PCB feature
+E6,AUX_REF,puck:AUX_Pad_D3.0mm,PCB feature
+FDC1,FDC_SENSE_PAD,puck:FDC_Sense_Pad_D7.9mm,PCB feature
+FDC2,FDC CIN2 pad,puck:FDC_Sense_Ring_D10-12.8mm,PCB feature
+J1,LiPo 400-500mAh protected,Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal,MPN/assembly quote review required
+L1,SWPA4030S1R0NT,Inductor_SMD:L_Sunlord_SWPA4030S,MPN/assembly quote review required
+L2,NFC external coil OPTION,puck:WirePad_1x02_SMD_1.5x3mm,MPN/assembly quote review required
+PZ1,PiezoDisc,puck:PZ_WirePad_1x02_SMD,MPN/assembly quote review required
+Q1,AO3400A,Package_TO_SOT_SMD:SOT-23,MPN/assembly quote review required
+Q2,AO3400A,Package_TO_SOT_SMD:SOT-23,MPN/assembly quote review required
+Q3,AO3400A,Package_TO_SOT_SMD:SOT-23,MPN/assembly quote review required
+Q4,AO3400A,Package_TO_SOT_SMD:SOT-23,MPN/assembly quote review required
+Q5,AO3400A,Package_TO_SOT_SMD:SOT-23,MPN/assembly quote review required
+R1,4.7k,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R10,100k,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R11,100R 1W 2512,Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder,MPN/assembly quote review required
+R12,100k,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R13,220R,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R14,4.7k,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R15,750k,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R16,100k,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R17,10k,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R2,4.7k,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R20,1M,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R21,1M,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R22,1M,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R23,1M,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R24,1M,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R26,1M,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R27,1M,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R28,100k,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R29,27R,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R3,1k,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R30,27R,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R31,1k,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R32,220R,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R33,100k,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R4,100k,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R5,220R,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R6,360R,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R7,150R,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R8,100k,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+R9,100k,Resistor_SMD:R_0402_1005Metric,MPN/assembly quote review required
+TP13,SWDIO,TestPoint:TestPoint_Pad_D1.5mm,PCB feature
+TP14,SWDCLK,TestPoint:TestPoint_Pad_D1.5mm,PCB feature
+TP15,RESET,TestPoint:TestPoint_Pad_D1.5mm,PCB feature
+TP16,VDD,TestPoint:TestPoint_Pad_D1.5mm,PCB feature
+TP17,GND,TestPoint:TestPoint_Pad_D1.5mm,PCB feature
+TP21,BTN_DFU,puck:ExpPad_1.2x2.2mm,PCB feature
+TP22,BTN_FRESET,puck:ExpPad_1.2x2.2mm,PCB feature
+TP23,EXP_A4,puck:ExpPad_1.2x2.2mm,PCB feature
+TP24,EXP_A5,puck:ExpPad_1.2x2.2mm,PCB feature
+TP25,EXP_00,puck:ExpPad_1.2x2.2mm,PCB feature
+TP26,EXP_01,puck:ExpPad_1.2x2.2mm,PCB feature
+TP6,EC_A,TestPoint:TestPoint_Pad_D1.5mm,PCB feature
+TP7,EC_B,TestPoint:TestPoint_Pad_D1.5mm,PCB feature
+U1,MDBT50Q-1MV2,puck:MDBT50Q-1MV2,MPN/assembly quote review required
+U10,XC6206P182MR 1.8V->AS7341 only,Package_TO_SOT_SMD:SOT-23,MPN/assembly quote review required
+U11,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,MPN/assembly quote review required
+U2,TPS61023,Package_TO_SOT_SMD:SOT-563,MPN/assembly quote review required
+U3,AS7341,puck:AMS_OLGA-8_2x3.1mm_P0.8mm,MPN/assembly quote review required
+U4,FDC1004,puck:SOP50P490X110-10N,MPN/assembly quote review required
+U5,MS5837-02BA,puck:XDCR_MS583702BA01-50,MPN/assembly quote review required
+U6,DS18B20U+,puck:DS18B20U_MSOP8,MPN/assembly quote review required
+U7,MCP73832T-2ACI/OT,Package_TO_SOT_SMD:SOT-23-5,MPN/assembly quote review required
+U8,LSM6DSO,Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y,MPN/assembly quote review required
+U9,IM69D130,Sensor_Audio:Infineon_PG-LLGA-5-1,MPN/assembly quote review required

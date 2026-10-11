@@ -1,0 +1,4135 @@
+[
+ {
+  "ref": "TP8",
+  "value": "EC_DRV_LO",
+  "lib_id": "Connector:TestPoint",
+  "x": 381.0,
+  "y": 276.86,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 381.0,
+    "y": 276.86,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "D5",
+  "value": "SS34 (DNP - not needed w/ TPS61023)",
+  "lib_id": "Diode:SS34",
+  "x": 370.84,
+  "y": 39.37,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "K",
+    "etype": "passive",
+    "x": 367.03,
+    "y": 39.37,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "A",
+    "etype": "passive",
+    "x": 374.65,
+    "y": 39.37,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R10",
+  "value": "100k",
+  "lib_id": "Device:R",
+  "x": 74.93,
+  "y": 317.5,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 74.93,
+    "y": 313.69,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 74.93,
+    "y": 321.31,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP13",
+  "value": "SWDIO",
+  "lib_id": "Connector:TestPoint",
+  "x": 320.04,
+  "y": 294.64,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 320.04,
+    "y": 294.64,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP1",
+  "value": "VDD",
+  "lib_id": "Connector:TestPoint",
+  "x": 274.32,
+  "y": 276.86,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 274.32,
+    "y": 276.86,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "U10",
+  "value": "XC6206P182MR 1.8V->AS7341 only",
+  "lib_id": "Regulator_Linear:XC6206PxxxMR",
+  "x": 39.37,
+  "y": 220.98,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "GND",
+    "etype": "power_in",
+    "x": 39.37,
+    "y": 228.6,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "VO",
+    "etype": "power_out",
+    "x": 46.99,
+    "y": 220.98,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "3",
+    "name": "VI",
+    "etype": "power_in",
+    "x": 31.75,
+    "y": 220.98,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "Q5",
+  "value": "AO3400A",
+  "lib_id": "Transistor_FET:AO3400A",
+  "x": 195.58,
+  "y": 278.13,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "G",
+    "etype": "input",
+    "x": 190.5,
+    "y": 278.13,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "S",
+    "etype": "passive",
+    "x": 198.12,
+    "y": 283.21,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   },
+   {
+    "num": "3",
+    "name": "D",
+    "etype": "passive",
+    "x": 198.12,
+    "y": 273.05,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "U2",
+  "value": "TPS61023",
+  "lib_id": "puck-extra:TPS61023",
+  "x": 322.58,
+  "y": 45.72,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "FB",
+    "etype": "input",
+    "x": 312.42,
+    "y": 50.8,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "EN",
+    "etype": "input",
+    "x": 312.42,
+    "y": 45.72,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "3",
+    "name": "VIN",
+    "etype": "power_in",
+    "x": 312.42,
+    "y": 40.64,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "4",
+    "name": "GND",
+    "etype": "power_in",
+    "x": 322.58,
+    "y": 55.88,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   },
+   {
+    "num": "5",
+    "name": "SW",
+    "etype": "passive",
+    "x": 332.74,
+    "y": 40.64,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "6",
+    "name": "VOUT",
+    "etype": "power_out",
+    "x": 332.74,
+    "y": 45.72,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "C15",
+  "value": "1uF",
+  "lib_id": "Device:C",
+  "x": 80.01,
+  "y": 223.52,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 80.01,
+    "y": 219.71,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 80.01,
+    "y": 227.33,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "#FLG03",
+  "value": "PWR_FLAG",
+  "lib_id": "power:PWR_FLAG",
+  "x": 384.81,
+  "y": 311.15,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "power_out",
+    "x": 384.81,
+    "y": 311.15,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "D2",
+  "value": "IR850",
+  "lib_id": "Device:LED",
+  "x": 44.45,
+  "y": 297.18,
+  "rot": 270.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "K",
+    "etype": "passive",
+    "x": 44.45,
+    "y": 293.37,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "A",
+    "etype": "passive",
+    "x": 44.45,
+    "y": 300.99,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP11",
+  "value": "5V",
+  "lib_id": "Connector:TestPoint",
+  "x": 289.56,
+  "y": 294.64,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 289.56,
+    "y": 294.64,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP9",
+  "value": "EC_DRV_HI",
+  "lib_id": "Connector:TestPoint",
+  "x": 396.24,
+  "y": 276.86,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 396.24,
+    "y": 276.86,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R1",
+  "value": "4.7k",
+  "lib_id": "Device:R",
+  "x": 95.25,
+  "y": 223.52,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 95.25,
+    "y": 219.71,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 95.25,
+    "y": 227.33,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R9",
+  "value": "100k",
+  "lib_id": "Device:R",
+  "x": 74.93,
+  "y": 297.18,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 74.93,
+    "y": 293.37,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 74.93,
+    "y": 300.99,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "U1",
+  "value": "MDBT50Q-1MV2",
+  "lib_id": "puck-extra:MDBT50Q-1MV2",
+  "x": 63.5,
+  "y": 83.82,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "GND",
+    "etype": "power_in",
+    "x": 63.5,
+    "y": 129.54,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "GND",
+    "etype": "passive",
+    "x": 63.5,
+    "y": 129.54,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": true
+   },
+   {
+    "num": "3",
+    "name": "P1.10",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 111.76,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "4",
+    "name": "P1.11",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 114.3,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "5",
+    "name": "P1.12",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 116.84,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "6",
+    "name": "P1.13",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 119.38,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "7",
+    "name": "P1.14",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 121.92,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "8",
+    "name": "P1.15",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 124.46,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "9",
+    "name": "P0.03",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 53.34,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "10",
+    "name": "P0.29",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 63.5,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "11",
+    "name": "P0.02",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 50.8,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "12",
+    "name": "P0.31",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 68.58,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "13",
+    "name": "P0.28",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 60.96,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "14",
+    "name": "P0.30",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 66.04,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "15",
+    "name": "GND",
+    "etype": "passive",
+    "x": 63.5,
+    "y": 129.54,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": true
+   },
+   {
+    "num": "16",
+    "name": "P0.27",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 104.14,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "17",
+    "name": "P0.00",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 48.26,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "18",
+    "name": "P0.01",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 50.8,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "19",
+    "name": "P0.26",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 101.6,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "20",
+    "name": "P0.04",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 55.88,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "21",
+    "name": "P0.05",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 58.42,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "22",
+    "name": "P0.06",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 55.88,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "23",
+    "name": "P0.07",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 119.38,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "24",
+    "name": "P0.08",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 58.42,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "25",
+    "name": "P1.08",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 109.22,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "26",
+    "name": "P1.09",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 116.84,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "27",
+    "name": "P0.11",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 114.3,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "28",
+    "name": "VDD",
+    "etype": "power_in",
+    "x": 60.96,
+    "y": 38.1,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "29",
+    "name": "P0.12",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 111.76,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "30",
+    "name": "VDDH",
+    "etype": "power_in",
+    "x": 63.5,
+    "y": 38.1,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "31",
+    "name": "DCCH",
+    "etype": "power_out",
+    "x": 68.58,
+    "y": 38.1,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "32",
+    "name": "VBUS",
+    "etype": "power_in",
+    "x": 66.04,
+    "y": 38.1,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "33",
+    "name": "GND",
+    "etype": "passive",
+    "x": 63.5,
+    "y": 129.54,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": true
+   },
+   {
+    "num": "34",
+    "name": "D-",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 83.82,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "35",
+    "name": "D+",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 86.36,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "36",
+    "name": "P0.14",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 66.04,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "37",
+    "name": "P0.13",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 63.5,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "38",
+    "name": "P0.16",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 71.12,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "39",
+    "name": "P0.15",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 68.58,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "40",
+    "name": "P0.18",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 78.74,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "41",
+    "name": "P0.17",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 73.66,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "42",
+    "name": "P0.19",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 83.82,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "43",
+    "name": "P0.21",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 88.9,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "44",
+    "name": "P0.20",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 86.36,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "45",
+    "name": "P0.23",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 93.98,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "46",
+    "name": "P0.22",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 91.44,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "47",
+    "name": "P1.00",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 109.22,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "48",
+    "name": "P0.24",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 96.52,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "49",
+    "name": "P0.25",
+    "etype": "bidirectional",
+    "x": 83.82,
+    "y": 99.06,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "50",
+    "name": "P1.02",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 93.98,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "51",
+    "name": "SWDIO",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 43.18,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "52",
+    "name": "P0.09",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 73.66,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "53",
+    "name": "SWDCLK",
+    "etype": "input",
+    "x": 43.18,
+    "y": 45.72,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "54",
+    "name": "P0.10",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 76.2,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "55",
+    "name": "GND",
+    "etype": "passive",
+    "x": 63.5,
+    "y": 129.54,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": true
+   },
+   {
+    "num": "56",
+    "name": "P1.04",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 99.06,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "57",
+    "name": "P1.06",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 104.14,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "58",
+    "name": "P1.07",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 106.68,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "59",
+    "name": "P1.05",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 101.6,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "60",
+    "name": "P1.03",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 96.52,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "61",
+    "name": "P1.01",
+    "etype": "bidirectional",
+    "x": 43.18,
+    "y": 91.44,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "U8",
+  "value": "LSM6DSO",
+  "lib_id": "puck-extra:LSM6DSO",
+  "x": 182.88,
+  "y": 189.23,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "SDO/SA0",
+    "etype": "bidirectional",
+    "x": 167.64,
+    "y": 181.61,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "SDX",
+    "etype": "bidirectional",
+    "x": 167.64,
+    "y": 184.15,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "3",
+    "name": "SCX",
+    "etype": "input",
+    "x": 167.64,
+    "y": 186.69,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "4",
+    "name": "INT1",
+    "etype": "output",
+    "x": 198.12,
+    "y": 181.61,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "5",
+    "name": "VDDIO",
+    "etype": "power_in",
+    "x": 182.88,
+    "y": 173.99,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "6",
+    "name": "GND",
+    "etype": "power_in",
+    "x": 182.88,
+    "y": 204.47,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   },
+   {
+    "num": "7",
+    "name": "GND",
+    "etype": "passive",
+    "x": 182.88,
+    "y": 204.47,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": true
+   },
+   {
+    "num": "8",
+    "name": "VDD",
+    "etype": "power_in",
+    "x": 185.42,
+    "y": 173.99,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "9",
+    "name": "INT2",
+    "etype": "output",
+    "x": 198.12,
+    "y": 184.15,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "10",
+    "name": "OCS_Aux",
+    "etype": "passive",
+    "x": 167.64,
+    "y": 189.23,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "11",
+    "name": "SDO_Aux",
+    "etype": "bidirectional",
+    "x": 167.64,
+    "y": 179.07,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "12",
+    "name": "CS",
+    "etype": "input",
+    "x": 167.64,
+    "y": 196.85,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "13",
+    "name": "SCL",
+    "etype": "input",
+    "x": 167.64,
+    "y": 194.31,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "14",
+    "name": "SDA",
+    "etype": "bidirectional",
+    "x": 167.64,
+    "y": 191.77,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "C13",
+  "value": "300pF NFC",
+  "lib_id": "Device:C",
+  "x": 175.26,
+  "y": 41.91,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 175.26,
+    "y": 38.1,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 175.26,
+    "y": 45.72,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "J1",
+  "value": "LiPo 400-500mAh protected",
+  "lib_id": "Connector_Generic:Conn_01x02",
+  "x": 214.63,
+  "y": 90.17,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "Pin_1",
+    "etype": "passive",
+    "x": 209.55,
+    "y": 90.17,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "Pin_2",
+    "etype": "passive",
+    "x": 209.55,
+    "y": 92.71,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "Q1",
+  "value": "AO3400A",
+  "lib_id": "Transistor_FET:AO3400A",
+  "x": 59.69,
+  "y": 278.13,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "G",
+    "etype": "input",
+    "x": 54.61,
+    "y": 278.13,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "S",
+    "etype": "passive",
+    "x": 62.23,
+    "y": 283.21,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   },
+   {
+    "num": "3",
+    "name": "D",
+    "etype": "passive",
+    "x": 62.23,
+    "y": 273.05,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP2",
+  "value": "GND",
+  "lib_id": "Connector:TestPoint",
+  "x": 289.56,
+  "y": 276.86,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 289.56,
+    "y": 276.86,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "U3",
+  "value": "AS7341",
+  "lib_id": "Sensor_Optical:AS7341DLG",
+  "x": 33.02,
+  "y": 181.61,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "VDD",
+    "etype": "power_in",
+    "x": 33.02,
+    "y": 173.99,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "SCL",
+    "etype": "input",
+    "x": 22.86,
+    "y": 181.61,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "3",
+    "name": "GND",
+    "etype": "power_in",
+    "x": 33.02,
+    "y": 189.23,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   },
+   {
+    "num": "4",
+    "name": "LDR",
+    "etype": "passive",
+    "x": 43.18,
+    "y": 179.07,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "5",
+    "name": "PGND",
+    "etype": "power_in",
+    "x": 35.56,
+    "y": 189.23,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   },
+   {
+    "num": "6",
+    "name": "GPIO",
+    "etype": "input",
+    "x": 22.86,
+    "y": 184.15,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "7",
+    "name": "INT",
+    "etype": "open_collector",
+    "x": 43.18,
+    "y": 181.61,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "8",
+    "name": "SDA",
+    "etype": "bidirectional",
+    "x": 22.86,
+    "y": 179.07,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "U9",
+  "value": "IM69D130",
+  "lib_id": "Sensor_Audio:IM69D130",
+  "x": 238.76,
+  "y": 181.61,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "DATA",
+    "etype": "output",
+    "x": 248.92,
+    "y": 184.15,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "VDD",
+    "etype": "power_in",
+    "x": 238.76,
+    "y": 173.99,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "3",
+    "name": "CLOCK",
+    "etype": "input",
+    "x": 248.92,
+    "y": 181.61,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "4",
+    "name": "SELECT",
+    "etype": "input",
+    "x": 248.92,
+    "y": 179.07,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "5",
+    "name": "GND",
+    "etype": "power_in",
+    "x": 238.76,
+    "y": 189.23,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R12",
+  "value": "100k",
+  "lib_id": "Device:R",
+  "x": 135.89,
+  "y": 276.86,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 135.89,
+    "y": 273.05,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 135.89,
+    "y": 280.67,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R25",
+  "value": "DNP",
+  "lib_id": "Device:R",
+  "x": 29.21,
+  "y": 355.6,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 29.21,
+    "y": 351.79,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 29.21,
+    "y": 359.41,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP15",
+  "value": "RESET",
+  "lib_id": "Connector:TestPoint",
+  "x": 350.52,
+  "y": 294.64,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 350.52,
+    "y": 294.64,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "U7",
+  "value": "MCP73831-2",
+  "lib_id": "Battery_Management:MCP73831-2-OT",
+  "x": 238.76,
+  "y": 45.72,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "STAT",
+    "etype": "tri_state",
+    "x": 248.92,
+    "y": 48.26,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "V_{SS}",
+    "etype": "power_in",
+    "x": 238.76,
+    "y": 53.34,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   },
+   {
+    "num": "3",
+    "name": "V_{BAT}",
+    "etype": "power_out",
+    "x": 248.92,
+    "y": 43.18,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "4",
+    "name": "V_{DD}",
+    "etype": "power_in",
+    "x": 238.76,
+    "y": 38.1,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "5",
+    "name": "PROG",
+    "etype": "input",
+    "x": 228.6,
+    "y": 48.26,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "E3",
+  "value": "EC_FORCE_A",
+  "lib_id": "Connector_Generic:Conn_01x01",
+  "x": 419.1,
+  "y": 193.04,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "Pin_1",
+    "etype": "passive",
+    "x": 414.02,
+    "y": 193.04,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "L2",
+  "value": "NFC PCB coil",
+  "lib_id": "Device:L",
+  "x": 143.51,
+  "y": 41.91,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 143.51,
+    "y": 38.1,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "2",
+    "etype": "passive",
+    "x": 143.51,
+    "y": 45.72,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "CP1",
+  "value": "CHG_PAD+ (5V in)",
+  "lib_id": "Connector_Generic:Conn_01x01",
+  "x": 254.0,
+  "y": 90.17,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "Pin_1",
+    "etype": "passive",
+    "x": 248.92,
+    "y": 90.17,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R22",
+  "value": "1M",
+  "lib_id": "Device:R",
+  "x": 416.56,
+  "y": 213.36,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 416.56,
+    "y": 209.55,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 416.56,
+    "y": 217.17,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "D6",
+  "value": "SS14",
+  "lib_id": "Diode:SS34",
+  "x": 234.95,
+  "y": 90.17,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "K",
+    "etype": "passive",
+    "x": 231.14,
+    "y": 90.17,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "A",
+    "etype": "passive",
+    "x": 238.76,
+    "y": 90.17,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R3",
+  "value": "1k",
+  "lib_id": "Device:R",
+  "x": 386.08,
+  "y": 173.99,
+  "rot": 90.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 382.27,
+    "y": 173.99,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 389.89,
+    "y": 173.99,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R14",
+  "value": "4.7k",
+  "lib_id": "Device:R",
+  "x": 346.71,
+  "y": 177.8,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 346.71,
+    "y": 173.99,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 346.71,
+    "y": 181.61,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "E4",
+  "value": "EC_FORCE_B",
+  "lib_id": "Connector_Generic:Conn_01x01",
+  "x": 434.34,
+  "y": 193.04,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "Pin_1",
+    "etype": "passive",
+    "x": 429.26,
+    "y": 193.04,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "Q3",
+  "value": "AO3400A",
+  "lib_id": "Transistor_FET:AO3400A",
+  "x": 59.69,
+  "y": 318.77,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "G",
+    "etype": "input",
+    "x": 54.61,
+    "y": 318.77,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "S",
+    "etype": "passive",
+    "x": 62.23,
+    "y": 323.85,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   },
+   {
+    "num": "3",
+    "name": "D",
+    "etype": "passive",
+    "x": 62.23,
+    "y": 313.69,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP3",
+  "value": "GND",
+  "lib_id": "Connector:TestPoint",
+  "x": 304.8,
+  "y": 276.86,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 304.8,
+    "y": 276.86,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "C7",
+  "value": "100nF",
+  "lib_id": "Device:C",
+  "x": 53.34,
+  "y": 177.8,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 53.34,
+    "y": 173.99,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 53.34,
+    "y": 181.61,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R26",
+  "value": "1M",
+  "lib_id": "Device:R",
+  "x": 447.04,
+  "y": 213.36,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 447.04,
+    "y": 209.55,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 447.04,
+    "y": 217.17,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "C17",
+  "value": "1uF",
+  "lib_id": "Device:C",
+  "x": 273.05,
+  "y": 177.8,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 273.05,
+    "y": 173.99,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 273.05,
+    "y": 181.61,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "#FLG02",
+  "value": "PWR_FLAG",
+  "lib_id": "power:PWR_FLAG",
+  "x": 369.57,
+  "y": 311.15,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "power_out",
+    "x": 369.57,
+    "y": 311.15,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R19",
+  "value": "5.1k",
+  "lib_id": "Device:R",
+  "x": 288.29,
+  "y": 41.91,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 288.29,
+    "y": 38.1,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 288.29,
+    "y": 45.72,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R13",
+  "value": "220R",
+  "lib_id": "Device:R",
+  "x": 180.34,
+  "y": 273.05,
+  "rot": 90.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 176.53,
+    "y": 273.05,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 184.15,
+    "y": 273.05,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "C5",
+  "value": "22uF 16V",
+  "lib_id": "Device:C",
+  "x": 347.98,
+  "y": 69.85,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 347.98,
+    "y": 66.04,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 347.98,
+    "y": 73.66,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R17",
+  "value": "4.7k",
+  "lib_id": "Device:R",
+  "x": 257.81,
+  "y": 41.91,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 257.81,
+    "y": 38.1,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 257.81,
+    "y": 45.72,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R4",
+  "value": "100k",
+  "lib_id": "Device:R",
+  "x": 401.32,
+  "y": 173.99,
+  "rot": 90.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 397.51,
+    "y": 173.99,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 405.13,
+    "y": 173.99,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R24",
+  "value": "1M",
+  "lib_id": "Device:R",
+  "x": 210.82,
+  "y": 276.86,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 210.82,
+    "y": 273.05,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 210.82,
+    "y": 280.67,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R20",
+  "value": "1M",
+  "lib_id": "Device:R",
+  "x": 386.08,
+  "y": 213.36,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 386.08,
+    "y": 209.55,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 386.08,
+    "y": 217.17,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "D3",
+  "value": "UV365",
+  "lib_id": "Device:LED",
+  "x": 44.45,
+  "y": 317.5,
+  "rot": 270.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "K",
+    "etype": "passive",
+    "x": 44.45,
+    "y": 313.69,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "A",
+    "etype": "passive",
+    "x": 44.45,
+    "y": 321.31,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP16",
+  "value": "VDD",
+  "lib_id": "Connector:TestPoint",
+  "x": 365.76,
+  "y": 294.64,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 365.76,
+    "y": 294.64,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "C2",
+  "value": "4.7uF X7R",
+  "lib_id": "Device:C",
+  "x": 431.8,
+  "y": 175.26,
+  "rot": 90.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 427.99,
+    "y": 175.26,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 435.61,
+    "y": 175.26,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "C16",
+  "value": "100nF",
+  "lib_id": "Device:C",
+  "x": 447.04,
+  "y": 177.8,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 447.04,
+    "y": 173.99,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 447.04,
+    "y": 181.61,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP12",
+  "value": "BOOST_EN",
+  "lib_id": "Connector:TestPoint",
+  "x": 304.8,
+  "y": 294.64,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 304.8,
+    "y": 294.64,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "H3",
+  "value": "MountingHole",
+  "lib_id": "Mechanical:MountingHole",
+  "x": 339.09,
+  "y": 309.88,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": []
+ },
+ {
+  "ref": "R16",
+  "value": "100k",
+  "lib_id": "Device:R",
+  "x": 332.74,
+  "y": 69.85,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 332.74,
+    "y": 66.04,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 332.74,
+    "y": 73.66,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP17",
+  "value": "GND",
+  "lib_id": "Connector:TestPoint",
+  "x": 381.0,
+  "y": 294.64,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 381.0,
+    "y": 294.64,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R5",
+  "value": "220R",
+  "lib_id": "Device:R",
+  "x": 29.21,
+  "y": 276.86,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 29.21,
+    "y": 273.05,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 29.21,
+    "y": 280.67,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "PD1",
+  "value": "GUVC-T21GH (DNP - v2)",
+  "lib_id": "Connector_Generic:Conn_01x03",
+  "x": 77.47,
+  "y": 355.6,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "Pin_1",
+    "etype": "passive",
+    "x": 72.39,
+    "y": 353.06,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "Pin_2",
+    "etype": "passive",
+    "x": 72.39,
+    "y": 355.6,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "3",
+    "name": "Pin_3",
+    "etype": "passive",
+    "x": 72.39,
+    "y": 358.14,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R21",
+  "value": "1M",
+  "lib_id": "Device:R",
+  "x": 401.32,
+  "y": 213.36,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 401.32,
+    "y": 209.55,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 401.32,
+    "y": 217.17,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "E1",
+  "value": "ELECTRODE_A",
+  "lib_id": "Connector_Generic:Conn_01x01",
+  "x": 387.35,
+  "y": 193.04,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "Pin_1",
+    "etype": "passive",
+    "x": 382.27,
+    "y": 193.04,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "D1",
+  "value": "WHITE",
+  "lib_id": "Device:LED",
+  "x": 44.45,
+  "y": 276.86,
+  "rot": 270.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "K",
+    "etype": "passive",
+    "x": 44.45,
+    "y": 273.05,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "A",
+    "etype": "passive",
+    "x": 44.45,
+    "y": 280.67,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "FDC1",
+  "value": "FDC_SENSE_PAD",
+  "lib_id": "Connector_Generic:Conn_01x01",
+  "x": 276.86,
+  "y": 309.88,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "Pin_1",
+    "etype": "passive",
+    "x": 271.78,
+    "y": 309.88,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "E2",
+  "value": "ELECTRODE_B",
+  "lib_id": "Connector_Generic:Conn_01x01",
+  "x": 402.59,
+  "y": 193.04,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "Pin_1",
+    "etype": "passive",
+    "x": 397.51,
+    "y": 193.04,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP7",
+  "value": "EC_B",
+  "lib_id": "Connector:TestPoint",
+  "x": 365.76,
+  "y": 276.86,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 365.76,
+    "y": 276.86,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "U5",
+  "value": "MS5837-02BA",
+  "lib_id": "puck-extra:MS583702BA01-50",
+  "x": 132.08,
+  "y": 179.07,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "GND",
+    "etype": "power_in",
+    "x": 147.32,
+    "y": 184.15,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "VDD",
+    "etype": "power_in",
+    "x": 147.32,
+    "y": 176.53,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "3",
+    "name": "SCL",
+    "etype": "input",
+    "x": 116.84,
+    "y": 179.07,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "4",
+    "name": "SDA",
+    "etype": "bidirectional",
+    "x": 116.84,
+    "y": 181.61,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R8",
+  "value": "100k",
+  "lib_id": "Device:R",
+  "x": 74.93,
+  "y": 276.86,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 74.93,
+    "y": 273.05,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 74.93,
+    "y": 280.67,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "C1",
+  "value": "4.7uF X7R",
+  "lib_id": "Device:C",
+  "x": 416.56,
+  "y": 175.26,
+  "rot": 90.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 412.75,
+    "y": 175.26,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 420.37,
+    "y": 175.26,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "U6",
+  "value": "DS18B20",
+  "lib_id": "Sensor_Temperature:DS18B20",
+  "x": 330.2,
+  "y": 181.61,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "GND",
+    "etype": "power_in",
+    "x": 330.2,
+    "y": 189.23,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "DQ",
+    "etype": "bidirectional",
+    "x": 337.82,
+    "y": 181.61,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "3",
+    "name": "V_{DD}",
+    "etype": "power_in",
+    "x": 330.2,
+    "y": 173.99,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP18",
+  "value": "VBUS",
+  "lib_id": "Connector:TestPoint",
+  "x": 396.24,
+  "y": 294.64,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 396.24,
+    "y": 294.64,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "D7",
+  "value": "275nm UVC (DNP - v2)",
+  "lib_id": "Device:LED",
+  "x": 49.53,
+  "y": 355.6,
+  "rot": 270.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "K",
+    "etype": "passive",
+    "x": 49.53,
+    "y": 351.79,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "A",
+    "etype": "passive",
+    "x": 49.53,
+    "y": 359.41,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R23",
+  "value": "1M",
+  "lib_id": "Device:R",
+  "x": 431.8,
+  "y": 213.36,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 431.8,
+    "y": 209.55,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 431.8,
+    "y": 217.17,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "PZ1",
+  "value": "PiezoDisc",
+  "lib_id": "Device:Buzzer",
+  "x": 165.1,
+  "y": 275.59,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "+",
+    "etype": "passive",
+    "x": 162.56,
+    "y": 273.05,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "-",
+    "etype": "passive",
+    "x": 162.56,
+    "y": 278.13,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "Q4",
+  "value": "AO3400A",
+  "lib_id": "Transistor_FET:AO3400A",
+  "x": 120.65,
+  "y": 278.13,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "G",
+    "etype": "input",
+    "x": 115.57,
+    "y": 278.13,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "S",
+    "etype": "passive",
+    "x": 123.19,
+    "y": 283.21,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   },
+   {
+    "num": "3",
+    "name": "D",
+    "etype": "passive",
+    "x": 123.19,
+    "y": 273.05,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP10",
+  "value": "VBAT",
+  "lib_id": "Connector:TestPoint",
+  "x": 274.32,
+  "y": 294.64,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 274.32,
+    "y": 294.64,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "C3",
+  "value": "100uF",
+  "lib_id": "Device:C",
+  "x": 114.3,
+  "y": 41.91,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 114.3,
+    "y": 38.1,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 114.3,
+    "y": 45.72,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "C12",
+  "value": "300pF NFC",
+  "lib_id": "Device:C",
+  "x": 160.02,
+  "y": 41.91,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 160.02,
+    "y": 38.1,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 160.02,
+    "y": 45.72,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "J2",
+  "value": "USB_C_16P",
+  "lib_id": "Connector:USB_C_Receptacle_USB2.0_16P",
+  "x": 208.28,
+  "y": 55.88,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "A1",
+    "name": "GND",
+    "etype": "passive",
+    "x": 208.28,
+    "y": 78.74,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   },
+   {
+    "num": "A4",
+    "name": "VBUS",
+    "etype": "passive",
+    "x": 223.52,
+    "y": 40.64,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "A5",
+    "name": "CC1",
+    "etype": "bidirectional",
+    "x": 223.52,
+    "y": 45.72,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "A6",
+    "name": "D+",
+    "etype": "bidirectional",
+    "x": 223.52,
+    "y": 58.42,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "A7",
+    "name": "D-",
+    "etype": "bidirectional",
+    "x": 223.52,
+    "y": 53.34,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "A8",
+    "name": "SBU1",
+    "etype": "bidirectional",
+    "x": 223.52,
+    "y": 68.58,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "A9",
+    "name": "VBUS",
+    "etype": "passive",
+    "x": 223.52,
+    "y": 40.64,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": true
+   },
+   {
+    "num": "A12",
+    "name": "GND",
+    "etype": "passive",
+    "x": 208.28,
+    "y": 78.74,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": true
+   },
+   {
+    "num": "B1",
+    "name": "GND",
+    "etype": "passive",
+    "x": 208.28,
+    "y": 78.74,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": true
+   },
+   {
+    "num": "B4",
+    "name": "VBUS",
+    "etype": "passive",
+    "x": 223.52,
+    "y": 40.64,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": true
+   },
+   {
+    "num": "B5",
+    "name": "CC2",
+    "etype": "bidirectional",
+    "x": 223.52,
+    "y": 48.26,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "B6",
+    "name": "D+",
+    "etype": "bidirectional",
+    "x": 223.52,
+    "y": 60.96,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "B7",
+    "name": "D-",
+    "etype": "bidirectional",
+    "x": 223.52,
+    "y": 55.88,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "B8",
+    "name": "SBU2",
+    "etype": "bidirectional",
+    "x": 223.52,
+    "y": 71.12,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "B9",
+    "name": "VBUS",
+    "etype": "passive",
+    "x": 223.52,
+    "y": 40.64,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": true
+   },
+   {
+    "num": "B12",
+    "name": "GND",
+    "etype": "passive",
+    "x": 208.28,
+    "y": 78.74,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": true
+   },
+   {
+    "num": "SH",
+    "name": "SHIELD",
+    "etype": "passive",
+    "x": 200.66,
+    "y": 78.74,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "FDC2",
+  "value": "FDC CIN2 pad",
+  "lib_id": "Connector_Generic:Conn_01x01",
+  "x": 294.64,
+  "y": 309.88,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "Pin_1",
+    "etype": "passive",
+    "x": 289.56,
+    "y": 309.88,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP14",
+  "value": "SWDCLK",
+  "lib_id": "Connector:TestPoint",
+  "x": 335.28,
+  "y": 294.64,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 335.28,
+    "y": 294.64,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "C6",
+  "value": "22uF 16V",
+  "lib_id": "Device:C",
+  "x": 363.22,
+  "y": 69.85,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 363.22,
+    "y": 66.04,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 363.22,
+    "y": 73.66,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "C10",
+  "value": "100nF",
+  "lib_id": "Device:C",
+  "x": 207.01,
+  "y": 177.8,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 207.01,
+    "y": 173.99,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 207.01,
+    "y": 181.61,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R27",
+  "value": "1M",
+  "lib_id": "Device:R",
+  "x": 462.28,
+  "y": 213.36,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 462.28,
+    "y": 209.55,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 462.28,
+    "y": 217.17,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "L1",
+  "value": "1uH >2A sat",
+  "lib_id": "Device:L",
+  "x": 341.63,
+  "y": 41.91,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 341.63,
+    "y": 38.1,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "2",
+    "etype": "passive",
+    "x": 341.63,
+    "y": 45.72,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "Q2",
+  "value": "AO3400A",
+  "lib_id": "Transistor_FET:AO3400A",
+  "x": 59.69,
+  "y": 298.45,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "G",
+    "etype": "input",
+    "x": 54.61,
+    "y": 298.45,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "S",
+    "etype": "passive",
+    "x": 62.23,
+    "y": 303.53,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   },
+   {
+    "num": "3",
+    "name": "D",
+    "etype": "passive",
+    "x": 62.23,
+    "y": 293.37,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "C9",
+  "value": "100nF",
+  "lib_id": "Device:C",
+  "x": 157.48,
+  "y": 177.8,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 157.48,
+    "y": 173.99,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 157.48,
+    "y": 181.61,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP6",
+  "value": "EC_A",
+  "lib_id": "Connector:TestPoint",
+  "x": 350.52,
+  "y": 276.86,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 350.52,
+    "y": 276.86,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R18",
+  "value": "5.1k",
+  "lib_id": "Device:R",
+  "x": 273.05,
+  "y": 41.91,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 273.05,
+    "y": 38.1,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 273.05,
+    "y": 45.72,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "H2",
+  "value": "MountingHole",
+  "lib_id": "Mechanical:MountingHole",
+  "x": 323.85,
+  "y": 309.88,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": []
+ },
+ {
+  "ref": "R2",
+  "value": "4.7k",
+  "lib_id": "Device:R",
+  "x": 110.49,
+  "y": 223.52,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 110.49,
+    "y": 219.71,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 110.49,
+    "y": 227.33,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R7",
+  "value": "150R",
+  "lib_id": "Device:R",
+  "x": 29.21,
+  "y": 317.5,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 29.21,
+    "y": 313.69,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 29.21,
+    "y": 321.31,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "U4",
+  "value": "FDC1004",
+  "lib_id": "puck-extra:FDC1004DGSR",
+  "x": 80.01,
+  "y": 191.77,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "SHLD1",
+    "etype": "input",
+    "x": 62.23,
+    "y": 194.31,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "CIN1",
+    "etype": "input",
+    "x": 62.23,
+    "y": 181.61,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "3",
+    "name": "CIN2",
+    "etype": "input",
+    "x": 62.23,
+    "y": 184.15,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "4",
+    "name": "CIN3",
+    "etype": "input",
+    "x": 62.23,
+    "y": 186.69,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "5",
+    "name": "CIN4",
+    "etype": "input",
+    "x": 62.23,
+    "y": 189.23,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "6",
+    "name": "SHLD2",
+    "etype": "input",
+    "x": 62.23,
+    "y": 196.85,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "7",
+    "name": "GND",
+    "etype": "power_in",
+    "x": 97.79,
+    "y": 207.01,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "8",
+    "name": "VDD",
+    "etype": "power_in",
+    "x": 97.79,
+    "y": 176.53,
+    "dx": 1.0,
+    "dy": 0.0,
+    "hide": false
+   },
+   {
+    "num": "9",
+    "name": "SCL",
+    "etype": "input",
+    "x": 62.23,
+    "y": 191.77,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   },
+   {
+    "num": "10",
+    "name": "SDA",
+    "etype": "bidirectional",
+    "x": 62.23,
+    "y": 201.93,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "#FLG04",
+  "value": "PWR_FLAG",
+  "lib_id": "power:PWR_FLAG",
+  "x": 400.05,
+  "y": 311.15,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "power_out",
+    "x": 400.05,
+    "y": 311.15,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "C8",
+  "value": "100nF",
+  "lib_id": "Device:C",
+  "x": 107.95,
+  "y": 177.8,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 107.95,
+    "y": 173.99,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 107.95,
+    "y": 181.61,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP5",
+  "value": "SCL",
+  "lib_id": "Connector:TestPoint",
+  "x": 335.28,
+  "y": 276.86,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 335.28,
+    "y": 276.86,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "CP2",
+  "value": "CHG_PAD-",
+  "lib_id": "Connector_Generic:Conn_01x01",
+  "x": 271.78,
+  "y": 90.17,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "Pin_1",
+    "etype": "passive",
+    "x": 266.7,
+    "y": 90.17,
+    "dx": -1.0,
+    "dy": -0.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "#FLG01",
+  "value": "PWR_FLAG",
+  "lib_id": "power:PWR_FLAG",
+  "x": 354.33,
+  "y": 311.15,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "power_out",
+    "x": 354.33,
+    "y": 311.15,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "H1",
+  "value": "MountingHole",
+  "lib_id": "Mechanical:MountingHole",
+  "x": 308.61,
+  "y": 309.88,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": []
+ },
+ {
+  "ref": "C14",
+  "value": "1uF",
+  "lib_id": "Device:C",
+  "x": 64.77,
+  "y": 223.52,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 64.77,
+    "y": 219.71,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 64.77,
+    "y": 227.33,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "TP4",
+  "value": "SDA",
+  "lib_id": "Connector:TestPoint",
+  "x": 320.04,
+  "y": 276.86,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "1",
+    "etype": "passive",
+    "x": 320.04,
+    "y": 276.86,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R6",
+  "value": "360R",
+  "lib_id": "Device:R",
+  "x": 29.21,
+  "y": 297.18,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 29.21,
+    "y": 293.37,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 29.21,
+    "y": 300.99,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "C11",
+  "value": "100nF",
+  "lib_id": "Device:C",
+  "x": 257.81,
+  "y": 177.8,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 257.81,
+    "y": 173.99,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 257.81,
+    "y": 181.61,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R11",
+  "value": "100R 1W 2512",
+  "lib_id": "Device:R",
+  "x": 104.14,
+  "y": 276.86,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 104.14,
+    "y": 273.05,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 104.14,
+    "y": 280.67,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ },
+ {
+  "ref": "R15",
+  "value": "750k",
+  "lib_id": "Device:R",
+  "x": 317.5,
+  "y": 69.85,
+  "rot": 0.0,
+  "mirror": null,
+  "dnp": false,
+  "pins": [
+   {
+    "num": "1",
+    "name": "",
+    "etype": "passive",
+    "x": 317.5,
+    "y": 66.04,
+    "dx": 0.0,
+    "dy": -1.0,
+    "hide": false
+   },
+   {
+    "num": "2",
+    "name": "",
+    "etype": "passive",
+    "x": 317.5,
+    "y": 73.66,
+    "dx": -0.0,
+    "dy": 1.0,
+    "hide": false
+   }
+  ]
+ }
+]
