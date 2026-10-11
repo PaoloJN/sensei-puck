@@ -3,6 +3,14 @@
 Dated work log, newest first. Moved out of STATUS.md on 2026-09-04; the
 2026-08-31 / 09-01 entries are the original STATUS table cells, verbatim.
 
+## 2026-10-11 (evening) — scripted routing pass, 130 → 19 signal opens
+
+- Board taken from Codex's pre-stitch copy (130 unconnected, 23 DRC warnings) to a candidate with **0 DRC errors, 49 unconnected**: 19 signal connections, 21 GND pour islands, 9 3V3 plane islands (In2 now carries signal traces, so the 3V3 pour is no longer one piece). 1012 → ~1600 track items. Renders `renders/october-routed-{top,bottom}.png`.
+- Method (`scripts/router/README.md`): 3V3 fan-out vias by script (`fanout_planes.py`, KiCad shape collision), hand routes under the FDC pads (`route_manual.py`: /CIN2 moved to the east side of U8, U8/C3/U1-28 3V3 on B.Cu to vias outside the sense pads, U4-7/U4-8 vias), then Freerouting 2.5.0 on a "router view" (`router_export.py`: fills dropped, outer-layer keep-outs only, wiring protected, complete nets hidden, widths capped 0.25 mm, In2 routable) in rounds (`round.sh`).
+- Findings: Freerouting cannot drop a via anywhere under the FDC disc/ring (r ≈ 6.45 mm around 148.4,100), the module's inner-row escape vias sit 0.45 mm from the ring on F.Cu, and the only exits are the two corridors past U9 and U5. Routing the module crossings first on the empty board with In2 open was the single biggest win (crossings 36 → 6 open); every other variant plateaued at 35–48. Freerouting does not count protected wiring as connectivity (reports ~40 phantom opens), ignores `class_class` clearance, and with neck-down on emits 0.1 mm tracks.
+- Still open (coordinates in the DRC report): EC_A→TP6, EC_SENSE_A ×2, EC_SENSE_B ×2, /LED1_K, /LED1_A, /LED3_K, PDM_DATA, PDM_CLK, VBAT (U1-30→U7), 5V (D9→R11), EC_BIAS (R22-1→R23-1), EC_BIAS_EN, EXP_01, CHG_STAT, BTN_FRESET, IMU_INT, /PAD_DM (U11 pins 1↔6). Each is boxed in by earlier router traces; finishing needs interactive push-and-shove in KiCad or a re-route of the EC sector by hand, plus GND/3V3 island repair.
+- Not touched: placement, the LED ring, boost loop, electrode stubs, escape vias, net classes.
+
 ## 2026-10-11 — Codex revision pass (unfinished), baseline commit
 
 - Codex (GPT-6, `codex-tui` 0.162.1) session 2026-10-10 19:34 → 2026-10-11 02:02, ended on an OpenAI usage limit mid-routing; no wrap-up. Brief: fix real-life issues, finalize the PCB, keep the full feature set.
