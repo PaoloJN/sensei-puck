@@ -43,7 +43,7 @@ Fontconfig warning: "/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf", line 18:
 Fontconfig warning: "/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf", line 26: invalid constant used : monospace
 Fontconfig warning: "/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf", line 34: invalid constant used : emoji
 Fontconfig warning: "/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf", line 42: invalid constant used : math
-Found 23 violations
-Found 131 unconnected items
+Found 0 violations
+Found 21 unconnected items
 Found 0 schematic parity issues
 Saved DRC Report to /Users/paolonessim/Projects/sensei-cup/hardware/hardware-puck-carrier/checks/drc.json

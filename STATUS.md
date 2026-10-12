@@ -1,6 +1,6 @@
 # Project status
 
-**October 11, 2026 — design revision in progress; not ready to fabricate.**
+**October 12, 2026 — design revision in progress; not ready to fabricate.**
 No parts have been bought or hardware assembled. Budget ceiling approximately
 $300, maximum two PCB spins. Historical September status is preserved in
 `docs/history/2026-09-paused-baseline/`.
@@ -25,18 +25,35 @@ single-pin labels (reserved UART_TX, UART_RX and the shield output used by the
 PCB pour), and the IMU SDO/SA0 bidirectional pin tied to the ground power net.
 These need to remain reviewed alongside the final release report.
 
-PCB routing is unfinished but far along (2026-10-11 night, see
-`docs/changelog.md`): the saved board has **0 DRC errors, 0 schematic parity
-issues, 28 unconnected items** = 15 signal connections, 12 GND pour islands and
-1 3V3 plane island. Everything else is routed (planes, fan-out, ring, boost,
-local nets, most module crossings). The 15 signals are boxed in by the module's
-east pad column under the FDC no-via zone; every automated strategy tried
-(Freerouting rounds, grid A* with rip-up, regional and whole-net re-routes,
-pins moved to spare pads, FDC pads shifted in simulation) plateaus there. The
-remaining options are interactive push-and-shove in KiCad or a re-plan of the
-bottom-layer area under the FDC pads (reserve it for local nets, define escape
-channels, re-route). **No candidate is fabrication-approved, and no new
-fabrication release has been generated.**
+The saved board has **0 DRC errors, 0 DRC warnings, 0 schematic parity
+issues, and 21 unconnected items** (fresh checks on October 12). The CAD gate
+is **FAIL** until those opens are closed. The checked source hashes and complete
+reports are in `hardware/hardware-puck-carrier/checks/manifest.json`.
+
+This pass connected USB D− across U11, rerouted its obstructing VBUS crossing,
+connected the module's VBAT supply, bridged the remaining split 3V3 plane, and
+improved ground connections. Eight starved GND pad thermals were changed to
+solid connections; redundant dangling copper was removed. **369 trace corners
+now use native tangent copper arcs**, verified without adding DRC errors or
+opens. Full feature set, footprint positions, capacitive electrodes, antenna
+keep-out and four-layer stack remain unchanged.
+
+The remaining 21 opens are 8 GND connections and one each on EC_SENSE_A,
+EC_SENSE_B, PDM_DATA, PDM_CLK, BTN_FRESET, EXP_01, EC_BIAS_EN, CHG_STAT,
+IMU_INT, 5V, /LED1_K, /LED1_A and /LED3_K. A local placement/routing redesign
+is still needed around the module and sensor circuitry. Electrode reshaping,
+electrode relocation and bulk-capacitor relocation trials were **not adopted**:
+none produced a fully connected improvement over the saved board.
+
+The routing tools now use a project-aware KiCad copper refill and exact polygon
+connectivity before raster pathfinding. Previously, a 0.0347 mm gap between
+3V3 pour pieces was smaller than the routing grid and was falsely reported as
+connected. DRC remains the authoritative connectivity check.
+
+Current previews: [top](hardware/hardware-puck-carrier/renders/october-rounded-top.png)
+and [bottom](hardware/hardware-puck-carrier/renders/october-rounded-bottom.png).
+These are design previews. **The PCB is not finalized or ready to fabricate;
+no fabrication release has been generated.**
 
 ## Remaining work
 

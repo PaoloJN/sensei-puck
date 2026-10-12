@@ -18,7 +18,7 @@ collision check and DRC stays authoritative.
 import json, sys, math, heapq, time, argparse
 import numpy as np
 from scipy import ndimage as ndi
-from shapely import Polygon, Point, LineString, union_all, contains_xy, make_valid
+from shapely import Polygon, Point, LineString, union_all, contains_xy, make_valid, STRtree
 
 ap = argparse.ArgumentParser()
 ap.add_argument('geom'); ap.add_argument('out'); ap.add_argument('--nets', nargs='+', required=True)
@@ -92,7 +92,7 @@ def build(net):
             if q['kind'] == 'via' or q.get('through'): samevia.append(g)
             if q['kind'] == 'via': vblock.append(Point(q['pos']).buffer(0.55, quad_segs=8))   # hole-to-hole
             continue
-        c = clr(net, q['net']) if q['net'] else 0.25
+        c = max(q.get('clearance', 0), clr(net, q['net']) if q['net'] else 0.25)
         if rippable(q, net):
             for l in ls: soft[l].append(g.buffer(c + w / 2 + M, quad_segs=8))
             vsoft.append(g.buffer(c + VIA_R + M, quad_segs=8)); continue
@@ -112,18 +112,23 @@ def build(net):
     softm = np.array([draw(union_all(s)) if s else np.zeros((N, N), bool) for s in soft])
     via_ok = INSIDE_VIA & ~draw(union_all(vblock))
     via_soft = draw(union_all(vsoft)) if vsoft else np.zeros((N, N), bool)
-    cu = np.array([draw(union_all(c).buffer(0.001)) if c else np.zeros((N, N), bool) for c in cond])
-    labels = np.zeros_like(cu, dtype=np.int32); total = 0
-    for l in range(4):
-        lab, n = ndi.label(cu[l], np.ones((3, 3), int)); labels[l] = np.where(lab, lab + total, 0); total += n
-    parent = list(range(total + 1))
-    def root(x):
-        while parent[x] != x: parent[x] = parent[parent[x]]; x = parent[x]
-        return x
-    for g in samevia:                       # vias / through pads join layers
-        m = draw(g); ns = [int(v) for l in range(4) for v in np.unique(labels[l][m]) if v]
-        for n in ns[1:]: parent[root(n)] = root(ns[0])
-    lookup = np.array([root(i) for i in range(total + 1)]); labels = lookup[labels]
+    # Establish electrical islands in exact geometry. Pixel adjacency can
+    # falsely bridge sub-grid gaps in power pours (observed: 0.0347 mm).
+    nodes=[]
+    for l, shapes in enumerate(cond):
+        g=union_all(shapes).buffer(.00001)
+        parts=list(g.geoms) if hasattr(g,'geoms') else [g]
+        nodes.extend((p,l) for p in parts if not p.is_empty)
+    parent=list(range(len(nodes)))
+    def root(i):
+        while parent[i]!=i: parent[i]=parent[parent[i]]; i=parent[i]
+        return i
+    tree=STRtree([g for g,l in nodes])
+    for via in samevia:
+        ix=tree.query(via.buffer(.00001),predicate='intersects')
+        for i in ix[1:]:parent[root(i)]=root(ix[0])
+    labels=np.zeros((4,N,N),dtype=np.int32)
+    for i,(g,l) in enumerate(nodes): labels[l][draw(g)]=root(i)+1
     samevia_m = draw(union_all(samevia)) if samevia else np.zeros((N, N), bool)
     return w, block, softm, via_ok, via_soft, labels, samevia_m
 

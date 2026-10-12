@@ -20,6 +20,8 @@ have been purchased and none of the physical performance claims have been tested
 | REGOUT0 startup protection was described but absent. | Erased-field-only 3V3 guard in initVariant; preserve other UICR bits and reset. | Carrier/XIAO builds pass; voltage and post-erase behavior need hardware. |
 | NFC tuning values were arbitrary. | C12/C13 DNP until the coil/mechanical stack is measured. | DNP flags in schematic and PCB. |
 | Boot/charge/EC idle behavior was unspecified in the placeholder application. | Commissioning idle image keeps loads off and reports VBUS detection. | No sensing application or measured low-power/charge-state implementation yet. |
+| USB D− was interrupted at U11 by a crossing VBUS trace; U1's battery connection was also open. | Connected D− and VBAT; rerouted the local VBUS crossing. | October 12 refill DRC and schematic parity; USB and power-up still need hardware tests. |
+| The routing grid falsely joined two 3V3 pour islands across a 0.0347 mm gap. | Added a short 3V3 bridge; routing tools now determine connectivity from polygons before rasterization. | The corresponding KiCad open is cleared. Overall CAD gate still fails on the 21 remaining opens listed in STATUS.md. |
 
 ## Real-life limitations retained as explicit gates
 

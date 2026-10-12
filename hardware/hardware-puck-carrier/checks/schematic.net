@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Users/paolonessim/Projects/sensei-cup/hardware/hardware-puck-carrier/puck-carrier.kicad_sch")
-		(date "2026-10-11T01:52:50")
+		(date "2026-10-12T19:25:38")
 		(tool "Eeschema 10.0.3")
 		(sheet
 			(number "1")

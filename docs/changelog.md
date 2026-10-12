@@ -3,6 +3,40 @@
 Dated work log, newest first. Moved out of STATUS.md on 2026-09-04; the
 2026-08-31 / 09-01 entries are the original STATUS table cells, verbatim.
 
+## 2026-10-12 — rounded copper and verified connectivity fixes, 28 → 21 opens
+
+- Saved PCB: **0 DRC errors, 0 DRC warnings, 0 parity issues, 21 opens**
+  (13 signal/power connections and 8 GND connections). ERC: 0 errors / 4 warnings;
+  independent netlist topology checks: 0 errors. Fresh source-hashed reports
+  replace the stale reports in `hardware/hardware-puck-carrier/checks/`.
+- Connected `/PAD_DM` between U11's two D− pins; moved the blocking VBUS section
+  through two vias. Connected U1's VBAT supply, added ground links, repaired
+  eight starved ground-pad thermals with solid connections, and removed dangling
+  stubs/vias. Subsequent refills were checked for newly isolated copper.
+- Connected the remaining 3V3 plane split with a short 0.3 mm bridge and a
+  0.5/0.3 mm via. The previous raster connectivity model merged two copper
+  polygons across a **0.0347 mm physical gap**; exact geometry found two islands.
+  The bridge removed the actual KiCad unconnected item.
+- Rounded **369 corners** with native KiCad copper arcs (approximately
+  0.06–0.45 mm radius). Preserved widths, nets and layers; skipped junctions and
+  constrained corners. Refill DRC and parity passed; rounding did not add opens.
+  Added `scripts/round_corners.py`; regenerated top/bottom design previews.
+- Corrected `geom_export.py` to refill a disposable board/project copy using
+  KiCad CLI rules, preserve source files, export pad-local clearance and record
+  the source hash. Corrected `grid_router.py` to determine islands using polygon
+  intersections before rasterization and respect exported pad-local clearances.
+- Rejected scratch trials: a C-shaped FDC ring (24% less sensing copper), moving
+  the full FDC pair north with nearby parts/test pads relocated, and moving C3
+  to free the module escape area. They did not yield a fully connected, better
+  verified board; **none of these geometry/placement changes reached the saved
+  PCB**. The relocation trial's Freerouting view also reported pre-existing
+  model violations; it was stopped and not imported. Scratch files are under
+  `/private/tmp/sensei-final-12/`, not a fabrication source.
+- All original features and component positions retained. No signal routing
+  added on the In1 ground plane. No parts ordered, no new fabrication package,
+  and no hardware or firmware measurements. The remaining 21 opens must still
+  be fixed; this is a verified improvement, **not PCB completion**.
+
 ## 2026-10-11 (night) — Codex limit-out, grid router, 49 → 28 unconnected
 
 - Codex's evening session ("fix the pcb… round traces") ran 234 repair iterations in `/private/tmp/sensei-pcb-finish` and stopped on its usage limit at 20:15 with no report. Its last candidate (`clean11.kicad_pcb`: 33 unconnected, 0 errors) was **not** adopted: it routes SDA, EXP_00, HEATER_EN, SWCLK, EC_BIAS and the LED1 nets on the In1 ground plane, removed the module 3V3 trunk and ripped up the module escapes (SCL ×4, SDA ×3, VBUS, USB_DM, NFC2, RING_DATA open). Nothing from it reached the repo.
