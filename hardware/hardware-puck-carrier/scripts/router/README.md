@@ -21,3 +21,19 @@ Order that worked best (see docs/changelog.md 2026-10-11 routing entry):
 
 Freerouting ignores `class_class` clearance rules and does not count protected
 wiring as connectivity, so the tool reports ~40 more opens than KiCad does.
+
+## Grid router tools (2026-10-11 night)
+
+For the last connections, where Freerouting stalls, a raster A* router with
+KiCad's own clearances. Everything runs on scratch copies; DRC is authoritative.
+
+1. `geom_export.py board out.json` (KiCad Python) — pads/tracks/vias/fills/keepouts.
+2. `uv run --with numpy,scipy,shapely python3 grid_router.py geom.json plans.json --nets A B [--inner] [--rip]`
+   — joins each net's connectivity islands; `--rip` lists crossed tracks in `remove`.
+3. `apply_plans.py board plans.json out` (KiCad Python) — rips textually, adds with
+   the `routelib` collision check, refills zones.
+4. `gnd_stitch.py geom.json plans.json` — one via per orphan pour island, names the pads on it.
+5. `plot_region.py geom.json out.png x0 y0 x1 y1 [--nets ..] [--plans ..]` — look before routing.
+6. `riploop.sh start tag N` — the rip-up iteration; it diverged on this board (see changelog).
+`strip_region.py` / `strip_nets_region.py` clear a box for a regional re-route; `pin_swap.py`
+moves four module nets to spare pads (schematic + board, parity-checked, not applied).

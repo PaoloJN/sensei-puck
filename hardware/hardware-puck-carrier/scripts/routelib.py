@@ -15,7 +15,7 @@ import math, pcbnew
 
 CX, CY = 150.0, 100.0
 COPPER = {'F.Cu': pcbnew.F_Cu, 'GND': pcbnew.In1_Cu, 'In1.Cu': pcbnew.In1_Cu, 'PWR': pcbnew.In2_Cu, 'In2.Cu': pcbnew.In2_Cu, 'B.Cu': pcbnew.B_Cu}
-EC_NETS = {'EC_A', 'EC_B', 'EC_SENSE_A', 'EC_SENSE_B', 'EC_BIAS', 'EC_BIAS_EN', 'EC_DRV_HI', 'EC_DRV_LO', '/EC_NODE_D'}
+EC_NETS = {'EC_A', 'EC_B', 'EC_SENSE_A', 'EC_SENSE_B', 'EC_BIAS', 'EC_BIAS_EN', 'EC_DRV_HI', 'EC_DRV_LO', '/EC_NODE_D', 'EXP_A4', 'EXP_A5'}
 mm, tomm = pcbnew.FromMM, pcbnew.ToMM
 def P(x, y): return pcbnew.VECTOR2I(mm(x), mm(y))
 

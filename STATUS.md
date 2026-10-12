@@ -25,15 +25,18 @@ single-pin labels (reserved UART_TX, UART_RX and the shield output used by the
 PCB pour), and the IMU SDO/SA0 bidirectional pin tied to the ground power net.
 These need to remain reviewed alongside the final release report.
 
-PCB routing is unfinished but far along (2026-10-11 evening scripted pass, see
+PCB routing is unfinished but far along (2026-10-11 night, see
 `docs/changelog.md`): the saved board has **0 DRC errors, 0 schematic parity
-issues, 49 unconnected items** = 19 signal connections, 21 GND pour islands and
-9 3V3 plane islands. Everything else is routed (planes, fan-out, ring, boost,
-local nets, most module crossings). The leftovers are listed in the changelog;
-they need interactive push-and-shove in KiCad or a hand re-route of the EC
-sector, then GND/3V3 island repair and a DRC with `--refill-zones`. **No
-candidate is fabrication-approved, and no new fabrication release has been
-generated.**
+issues, 28 unconnected items** = 15 signal connections, 12 GND pour islands and
+1 3V3 plane island. Everything else is routed (planes, fan-out, ring, boost,
+local nets, most module crossings). The 15 signals are boxed in by the module's
+east pad column under the FDC no-via zone; every automated strategy tried
+(Freerouting rounds, grid A* with rip-up, regional and whole-net re-routes,
+pins moved to spare pads, FDC pads shifted in simulation) plateaus there. The
+remaining options are interactive push-and-shove in KiCad or a re-plan of the
+bottom-layer area under the FDC pads (reserve it for local nets, define escape
+channels, re-route). **No candidate is fabrication-approved, and no new
+fabrication release has been generated.**
 
 ## Remaining work
 

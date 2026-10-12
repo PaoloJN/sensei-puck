@@ -31,6 +31,7 @@ ap.add_argument('--route-inner', nargs='*', default=[], help='inner layer names 
 ap.add_argument('--inner-band', nargs=4, type=float, metavar=('X0','Y0','X1','Y1'), help='with --route-inner: confine inner-layer wires to this rectangle (mm) using wire_keepouts, so the plane stays whole elsewhere')
 ap.add_argument('--clearance-floor', type=int, default=0, help='raise every DSN clearance rule to at least this many um (Freerouting ignores class_class rules, and KiCad applies the larger of two net-class clearances)')
 ap.add_argument('--pair-clearance', nargs='*', default=[], help='CLASS:um — KiCad uses the larger clearance of two net classes; emit class_class rules so the router does too')
+ap.add_argument('--keepout-circle', nargs=4, action='append', default=[], metavar=('X','Y','R','LAYER'), help='extra router-only wire keep-out disc (mm, layer F.Cu/B.Cu/PWR) so through-traffic stays out of a region')
 ap.add_argument('--hide-connected', metavar='DRC_JSON', help='also hide every net that this KiCad DRC report lists no unconnected item for')
 a = ap.parse_args()
 OUTER = {'F.Cu', 'B.Cu'}
@@ -82,6 +83,10 @@ def wire_keepout(layer, pts):
     structure.append(parse(f'(wire_keepout "" (polygon {layer} 0 {coords}))')[0])
 for name, layers, pts in inner_ko:
     for layer in layers: wire_keepout(layer, pts); print(f'inner-layer track keep-out {name} kept on {layer} as wire_keepout')
+import math
+for X_, Y_, R_, L_ in a.keepout_circle:
+    X_, Y_, R_ = float(X_), float(Y_), float(R_)
+    wire_keepout(L_, [(X_ + R_ * math.cos(2 * math.pi * i / 72), Y_ + R_ * math.sin(2 * math.pi * i / 72)) for i in range(72)]); print(f'router-only keep-out disc ({X_},{Y_}) r{R_} on {L_}')
 if a.inner_band and a.route_inner:
     x0, y0, x1, y1 = a.inner_band; R = 30
     for layer in a.route_inner:
