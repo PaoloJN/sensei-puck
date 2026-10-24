@@ -5,9 +5,7 @@ proof-of-concept that got as far as a finished schematic, a mostly routed
 4-layer PCB and a bring-up firmware variant, then stopped before the first
 board order. It is kept public as a design record, not as a kit to build.
 
-<p align="center">
-  <img src="docs/images/concept.png" width="360" alt="Concept render: a clear puck sitting in the bottom of a glass of water">
-</p>
+![The Sensei Puck board open in the KiCad PCB editor](docs/images/kicad-board.png)
 
 ## What it was supposed to be
 
@@ -30,12 +28,7 @@ was "has this water changed since I last looked, and roughly how".
 | `hardware/sensei-puck/` | KiCad 10 project. Schematic complete, ERC clean. Board placed on both faces (139 footprints, 4 layers). Last check: 1 clearance error, 25 connections still unrouted around the module. |
 | `hardware/board-spec.md` | Pin contract, power rules, sensor notes, release requirements. |
 | `firmware/` | PlatformIO + Adafruit nRF52 core. Custom `mdbt50q_puck` board and variant, safe-start `initVariant()`, REGOUT0 guard, a commissioning idle image and XIAO bench sketches. All targets compile. Nothing was ever flashed to a carrier. |
-| `docs/images/` | Concept render, app mock, board renders. |
-
-<p align="center">
-  <img src="docs/images/board-top.png" width="420" alt="Sensor face: EC fingers, concentric capacitive pads, optical cluster, pressure sensor and microphone">
-  <img src="docs/images/board-bottom.png" width="420" alt="Bottom face: MDBT50Q module, charger, boost, SWD pads, battery and dock pads">
-</p>
+| `docs/images/` | Board renders, concept render, app mock (see the gallery below). |
 
 Key parts: Raytac MDBT50Q-1MV2 (nRF52840), MCP73832 charger, TPS61023 5 V
 boost for a 12-LED ring, FDC1004 capacitance, MS5837 pressure, AS7341 spectral,
@@ -76,6 +69,17 @@ GPIO-driven AC conductivity cell with switched bias, the "store raw counts and
 settings" rule, and the habit of writing down every decision with a date and a
 reason. The full decision log, work log, research notes and the earlier v1
 board are in the git history before the archive commit.
+
+## Gallery
+
+<p align="center">
+  <img src="docs/images/board-top.png" width="400" alt="Sensor face: EC fingers, concentric capacitive pads, optical cluster, pressure sensor and microphone">
+  <img src="docs/images/board-bottom.png" width="400" alt="Bottom face: MDBT50Q module, charger, boost, SWD pads, battery and dock pads">
+</p>
+<p align="center">
+  <img src="docs/images/concept.png" width="400" alt="Concept render: a clear puck sitting in the bottom of a glass of water">
+  <img src="docs/images/app-design.png" width="225" alt="Phone app mock-up">
+</p>
 
 ## Running the firmware
 
