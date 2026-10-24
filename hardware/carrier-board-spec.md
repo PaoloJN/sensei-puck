@@ -64,28 +64,28 @@ undocked leakage with the actual USB/ESD circuit. Charge only on a dry dock.
 
 | nRF pin | Net | Function |
 |---|---|---|
-| P0.26 / P0.27 | SDA / SCL | I2C: AS7341 0x39, FDC1004 0x50, MS5837 0x76, LSM6DSO 0x6A |
+| P0.00 / P0.27 | SDA / SCL | I2C: AS7341 0x39, FDC1004 0x50, MS5837 0x76, LSM6DSO 0x6A |
 | P0.02 / P0.03 | EC_A / EC_B | Force electrode SAADC AIN0/AIN1 |
-| P0.04 / P0.05 | EC_SENSE_A / EC_SENSE_B | Sense electrode SAADC AIN2/AIN3 |
+| P0.31 / P0.05 | EC_SENSE_A / EC_SENSE_B | Sense electrode SAADC AIN7/AIN3 (EC_SENSE_A moved to module pad 12 on 2026-10-16 for routing) |
 | P0.22 / P0.23 | EC_DRV_LO / EC_DRV_HI | AC excitation through 1 kΩ / 100 kΩ; Hi-Z idle |
 | P0.30 | EC_BIAS_EN | Switched R20 bias feed; low/Hi-Z idle |
-| P0.13 / P0.14 / P0.15 | LED_WHITE / LED_850 / LED_365 | Q1 / Q2 / Q3 gates |
-| P0.16 | OW_DQ | DS18B20U+ 1-wire |
+| P0.15 / P0.13 / P0.24 | LED_WHITE / LED_850 / LED_365 | Q1 / Q2 / Q3 gates (pin pass 4, 2026-10-17: pads 39 / 37 / 48 so each gate is a straight bottom-side drop) |
+| P1.10 | OW_DQ | DS18B20U+ 1-wire (moved to module pad 3 on 2026-10-16) |
 | P0.17 | HEATER_EN | Q4 gate |
 | P0.19 | PIEZO | Q5 gate |
 | P0.20 | BOOST_EN | TPS61023 enable; R33 100 kΩ pulldown |
 | P0.21 | IMU_INT | LSM6DSO INT1 |
-| P0.08 / P0.06 | PDM_CLK / PDM_DATA | IM69D130 |
-| P0.24 / P0.25 | UART_TX / UART_RX | Reserved debug labels; currently no connected test points |
-| P0.07 | CHG_STAT | MCP73832 open-drain status; not dock-present detection |
-| P0.12 | LED_STAT | D8 through R31, active-high |
+| P1.13 / P1.11 | PDM_CLK / PDM_DATA | IM69D130 (moved to module pads 6 / 4 on 2026-10-16 for routing) |
+| P1.02 / P0.25 | UART_TX / UART_RX | Reserved debug labels; currently no connected test points (UART_TX moved to pad 50 in pin pass 4, 2026-10-17) |
+| P1.09 | CHG_STAT | MCP73832 open-drain status; not dock-present detection (module pad 26 after the 2026-10-16 passes) |
+| P0.08 | LED_STAT | D8 through R31, active-high (moved to module pad 24 on 2026-10-16) |
 | P1.00 | RING_DATA | R32 → 12 LED chain |
-| P1.08 / P1.09 | BTN_DFU / BTN_FRESET | TP21 / TP22, ground to assert |
+| P0.01 / P1.15 | BTN_DFU / BTN_FRESET | TP21 / TP22, ground to assert (pads 18 / 8 after the 2026-10-16 passes) |
 | P0.28 / P0.29 | EXP_A4 / EXP_A5 | TP23 / TP24 and E5 / E6; optional experiment only |
-| P0.00 / P0.01 | EXP_00 / EXP_01 | TP25 / TP26; no external LF crystal |
+| P0.04 / P0.06 | EXP_00 / EXP_01 | TP25 / TP26 (pads 20 / 22 after the 2026-10-16 passes); no external LF crystal |
 | P0.09 / P0.10 | NFC1 / NFC2 | Optional external coil; retain NFC pin configuration |
 | P0.18 | RESET | SWD/reset access; configure PSELRESET in bootloader |
-| P0.11 / P0.31 | NC | No UVC circuit in spin 1 |
+| P0.07 / P0.11 / P0.12 / P0.14 / P0.16 / P0.26 / P1.08 | NC | Freed by the 2026-10-16 pin swaps; no UVC circuit in spin 1 |
 | USB D+ / D− | USB_DP / USB_DM | R30 / R29 → USBLC6-2SC6 → dock |
 | VBUS | VBUS | Dock +5V through D6; USBREGSTATUS detects presence |
 | VDDH / VDD | VBAT / 3V3 | Battery input / REG0 output; do not drive VDD externally in this mode |

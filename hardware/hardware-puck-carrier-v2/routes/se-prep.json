@@ -1,0 +1,276 @@
+[
+ {
+  "name": "GND: R17.2 stub via at (153.4,106.3) sits on the CHG_STAT top-side column; remove (pad keeps the pour)",
+  "net": "GND",
+  "layer": "B.Cu",
+  "width": 0.3,
+  "pts": [],
+  "remove_tracks": [
+   [
+    154.59,
+    105.6,
+    154.2,
+    105.95
+   ],
+   [
+    154.2,
+    105.95,
+    153.7,
+    106.3
+   ],
+   [
+    153.7,
+    106.3,
+    153.4,
+    106.3
+   ]
+  ],
+  "remove_vias": [
+   [
+    153.4,
+    106.3
+   ]
+  ]
+ },
+ {
+  "name": "GND: U7 stub via east of U7.2 (frees the gap below D2 for the LED cathodes)",
+  "net": "GND",
+  "layer": "B.Cu",
+  "width": 0.15,
+  "pts": [],
+  "remove_tracks": [
+   [
+    154.2,
+    108.7,
+    154.6,
+    108.55
+   ],
+   [
+    153.16,
+    108.7,
+    154.2,
+    108.7
+   ]
+  ],
+  "remove_vias": [
+   [
+    154.6,
+    108.55
+   ]
+  ]
+ },
+ {
+  "name": "CHG_STAT: move the top-side column west, clear of the LED gap",
+  "net": "CHG_STAT",
+  "layer": "F.Cu",
+  "width": 0.15,
+  "pts": [],
+  "remove_tracks": [
+   [
+    153.3,
+    104.7,
+    153.3,
+    105.2
+   ],
+   [
+    153.3,
+    105.2,
+    154.0,
+    105.9
+   ],
+   [
+    154.0,
+    105.9,
+    154.0,
+    110.3
+   ]
+  ],
+  "remove_vias": [
+   [
+    154.0,
+    110.3
+   ]
+  ]
+ },
+ {
+  "name": "CHG_STAT: old B.Cu stub",
+  "net": "CHG_STAT",
+  "layer": "B.Cu",
+  "width": 0.15,
+  "pts": [],
+  "remove_tracks": [
+   [
+    154.0,
+    110.3,
+    153.7,
+    110.0
+   ],
+   [
+    153.7,
+    110.0,
+    153.3,
+    110.0
+   ],
+   [
+    153.3,
+    110.0,
+    153.3,
+    109.65
+   ]
+  ]
+ },
+ {
+  "name": "CHG_STAT: top-side column straight down from the lane via to a via just below U7.1",
+  "net": "CHG_STAT",
+  "layer": "F.Cu",
+  "width": 0.15,
+  "pts": [
+   [
+    153.3,
+    104.7
+   ],
+   [
+    153.3,
+    110.25
+   ]
+  ],
+  "vias": [
+   [
+    153.3,
+    110.25
+   ]
+  ],
+  "via_d": 0.5,
+  "via_drill": 0.2
+ },
+ {
+  "name": "CHG_STAT: B.Cu stub up into U7.1",
+  "net": "CHG_STAT",
+  "layer": "B.Cu",
+  "width": 0.15,
+  "pts": [
+   [
+    153.3,
+    110.25
+   ],
+   [
+    153.3,
+    109.65
+   ]
+  ]
+ },
+ {
+  "name": "VBAT: lower the U7.3-C25 link to make room for the cathode hop vias",
+  "net": "VBAT",
+  "layer": "B.Cu",
+  "width": 0.15,
+  "pts": [],
+  "remove_tracks": [
+   [
+    152.25,
+    110.68,
+    152.47,
+    110.9
+   ],
+   [
+    152.47,
+    110.9,
+    155.925,
+    110.9
+   ],
+   [
+    155.925,
+    110.9,
+    155.925,
+    110.875
+   ]
+  ]
+ },
+ {
+  "name": "VBAT: U7.3-C25 link along y 111.5",
+  "net": "VBAT",
+  "layer": "B.Cu",
+  "width": 0.4,
+  "pts": [
+   [
+    152.25,
+    110.68
+   ],
+   [
+    152.25,
+    111.25
+   ],
+   [
+    152.5,
+    111.5
+   ],
+   [
+    155.675,
+    111.5
+   ],
+   [
+    155.925,
+    111.25
+   ],
+   [
+    155.925,
+    110.875
+   ]
+  ]
+ },
+ {
+  "name": "3V3: U5.2 via in the gap collides with the cathode band; move it west",
+  "net": "3V3",
+  "layer": "F.Cu",
+  "width": 0.15,
+  "pts": [],
+  "remove_tracks": [
+   [
+    141.2,
+    108.5,
+    141.4,
+    108.7
+   ],
+   [
+    141.4,
+    108.7,
+    141.4,
+    109.6
+   ]
+  ],
+  "remove_vias": [
+   [
+    141.4,
+    109.6
+   ]
+  ]
+ },
+ {
+  "name": "3V3: U5.2 top stub west to a via under Q1 (lands in the PWR pour)",
+  "net": "3V3",
+  "layer": "F.Cu",
+  "width": 0.3,
+  "pts": [
+   [
+    141.2,
+    108.5
+   ],
+   [
+    139.2,
+    108.5
+   ],
+   [
+    139.0,
+    108.7
+   ]
+  ],
+  "vias": [
+   [
+    139.0,
+    108.7
+   ]
+  ],
+  "via_d": 0.6,
+  "via_drill": 0.3
+ }
+]

@@ -1,0 +1,5 @@
+[
+ {"name":"LED_850: gate trace from U1.37 goes east along y 105.95 and down the Q2.1/Q2.3 gap instead of between Q1.2 and Q2.2 (0.1 mm module rule); frees the pour between Q1.2 and Q2.2 so Q2.2 reaches the Q1.2 stitch via", "net":"LED_850","layer":"B.Cu","width":0.15,
+  "remove_tracks":[[140.85,104.65,140.85,105.7],[140.85,105.7,141.55,106.4],[141.55,106.4,141.55,108.75],[141.55,108.75,142.86,108.75]],
+  "pts":[[140.85,104.65],[140.85,105.7],[141.1,105.95],[143.55,105.95],[143.8,106.2],[143.8,108.45],[143.5,108.75],[142.86,108.75]]}
+]

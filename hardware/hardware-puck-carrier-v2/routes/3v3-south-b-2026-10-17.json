@@ -1,0 +1,6 @@
+[
+ {"name":"3V3: U1.28 plane via back (lands in the In2 sliver under the module)", "net":"3V3","layer":"B.Cu","width":0.1,
+  "vias":[[141.7,101.6]], "via_d":0.5, "via_drill":0.2, "pts":[[141.7,101.6],[143.45,101.6]]},
+ {"name":"3V3: second via in the same sliver between the SWDIO and SCL columns, F.Cu down to the U5.2 stub (feeds the south pour)", "net":"3V3","layer":"F.Cu","width":0.3,
+  "vias":[[139.7,101.2]], "via_d":0.6, "via_drill":0.3, "pts":[[139.7,101.2],[139.7,108.5]]}
+]

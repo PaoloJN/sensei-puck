@@ -34,3 +34,7 @@ settled; do not rewrite history — supersede with a new line.
 | 2026-08-31 | Bootloader buttons: BTN_DFU = P1.08 (TP21), BTN_FRESET = P1.09 (TP22) | Datasheet-verified unrestricted pins |
 | 2026-08-31 | Design-review part swaps: MT3608 → TPS61023, LIS2DW12 → LSM6DSO, MP34DT06J → IM69D130; XC6206 1.8 V LDO for AS7341 | See `docs/history/design-review.md` |
 | 2026-08-30 | Brain: Raytac MDBT50Q-1MV2 bare module replaces the XIAO carrier (and the E73 interim) | Best-documented nRF52840 module; XIAO stays the bench mule |
+
+## 2026-10-16 — Module pin swap and 0.1 mm local rules instead of more autorouting
+
+The MDBT50Q east and inner pad columns cannot be escaped at 0.15 mm rules (0.4 mm gaps, inner rows cannot pass the outer rows). Decision: write the escape plan first, then let the pin assignment follow it: EC_SENSE_A, PDM_DATA, PDM_CLK and BTN_FRESET to spare outer north pads (P0.31, P1.11, P1.13, P1.15); CHG_STAT, BTN_DFU, LED_STAT and SDA to the freed east-column pads (P0.04, P0.06, P0.08, P1.09) because their destinations are south-east and the east column feeds the south lane; LED_850 and OW_DQ to spare pads that exit directly (P1.02, P1.10). The module's north channel then carries 7 nets instead of 13 and add a 0.1 mm trace/clearance rule area under the module with 0.5/0.2 vias, which JLCPCB's 4-layer process (0.09 mm) supports. Firmware pin defines follow the spec table. Alternatives rejected: whole-board autorouting (tried five ways in October, boxes the module in) and a second module placement (new spin).

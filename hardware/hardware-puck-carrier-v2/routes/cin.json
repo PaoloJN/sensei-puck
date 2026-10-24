@@ -1,0 +1,6 @@
+[
+ {"name": "/CIN1 U4.2 -> via under the FDC1 disc (same-net via in the sensor pad)", "net": "/CIN1", "layer": "B.Cu", "width": 0.2, "clearance": 0.1,
+  "pts": [[150.5, 96.65], [150.5, 98.2]], "vias": [[150.5, 98.2]], "via_d": 0.5, "via_drill": 0.2},
+ {"name": "/CIN2 U4.3 -> via under the FDC2 ring, north of U4", "net": "/CIN2", "layer": "B.Cu", "width": 0.2, "clearance": 0.1,
+  "pts": [[150.0, 96.65], [150.0, 95.1]], "vias": [[150.0, 95.1]], "via_d": 0.5, "via_drill": 0.2}
+]

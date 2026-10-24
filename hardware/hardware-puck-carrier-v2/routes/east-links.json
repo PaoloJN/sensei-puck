@@ -1,0 +1,182 @@
+[
+ {
+  "name": "VBAT: remove the via at (155.85,89.1) and its two stubs",
+  "net": "VBAT",
+  "layer": "B.Cu",
+  "width": 0.4,
+  "pts": [],
+  "remove_vias": [
+   [
+    155.85,
+    89.1
+   ]
+  ],
+  "remove_tracks": [
+   [
+    155.85,
+    89.1,
+    155.85,
+    88.35
+   ]
+  ]
+ },
+ {
+  "name": "VBAT: remove the F.Cu bend into the old via",
+  "net": "VBAT",
+  "layer": "F.Cu",
+  "width": 0.4,
+  "pts": [],
+  "remove_tracks": [
+   [
+    155.9,
+    89.15,
+    155.85,
+    89.1
+   ]
+  ]
+ },
+ {
+  "name": "VBAT: F.Cu rail extended west to a new via at (155.5,89.15)",
+  "net": "VBAT",
+  "layer": "F.Cu",
+  "width": 0.4,
+  "pts": [
+   [
+    155.9,
+    89.15
+   ],
+   [
+    155.5,
+    89.15
+   ]
+  ],
+  "vias": [
+   [
+    155.5,
+    89.15
+   ]
+  ],
+  "via_d": 0.8,
+  "via_drill": 0.4
+ },
+ {
+  "name": "VBAT: B.Cu stub from the new via up into the U2.3 feed",
+  "net": "VBAT",
+  "layer": "B.Cu",
+  "width": 0.4,
+  "pts": [
+   [
+    155.5,
+    89.15
+   ],
+   [
+    155.5,
+    88.7
+   ],
+   [
+    155.85,
+    88.35
+   ]
+  ]
+ },
+ {
+  "name": "BOOST_EN: U2.2 west, down x 156.15 to a via below U2",
+  "net": "BOOST_EN",
+  "layer": "B.Cu",
+  "width": 0.15,
+  "pts": [
+   [
+    156.785,
+    88.9
+   ],
+   [
+    156.4,
+    88.9
+   ],
+   [
+    156.15,
+    89.15
+   ],
+   [
+    156.15,
+    90.05
+   ]
+  ],
+  "vias": [
+   [
+    156.15,
+    90.05
+   ]
+  ],
+  "via_d": 0.5,
+  "via_drill": 0.2
+ },
+ {
+  "name": "BOOST_EN: PWR hop under C6 to a via above R33.1",
+  "net": "BOOST_EN",
+  "layer": "In2.Cu",
+  "width": 0.15,
+  "pts": [
+   [
+    156.15,
+    90.05
+   ],
+   [
+    156.15,
+    91.65
+   ],
+   [
+    157.0,
+    92.5
+   ]
+  ],
+  "vias": [
+   [
+    157.0,
+    92.5
+   ]
+  ],
+  "via_d": 0.5,
+  "via_drill": 0.2
+ },
+ {
+  "name": "BOOST_EN: B.Cu stub down into R33.1",
+  "net": "BOOST_EN",
+  "layer": "B.Cu",
+  "width": 0.15,
+  "pts": [
+   [
+    157.0,
+    92.5
+   ],
+   [
+    157.0,
+    93.5
+   ]
+  ]
+ },
+ {
+  "name": "HEATER_EN: Q4.1 east under Q4.3 into R12.1",
+  "net": "HEATER_EN",
+  "layer": "B.Cu",
+  "width": 0.15,
+  "pts": [
+   [
+    160.0,
+    112.75
+   ],
+   [
+    164.45,
+    112.75
+   ],
+   [
+    164.99,
+    112.21
+   ],
+   [
+    164.99,
+    112.2
+   ]
+  ]
+ }
+]

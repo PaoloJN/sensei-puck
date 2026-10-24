@@ -1,0 +1,20 @@
+[
+ {"name":"GND: Q3.2 stitch via (0.5) below the pad", "net":"GND","layer":"B.Cu","width":0.3,
+  "vias":[[139.48,111.5]], "via_d":0.5, "via_drill":0.2, "pts":[[139.48,111.05],[139.48,111.5]]},
+ {"name":"GND: Q1.2 stitch via above the pad", "net":"GND","layer":"B.Cu","width":0.3,
+  "vias":[[140.05,107.8]], "via_d":0.5, "via_drill":0.2, "pts":[[140.05,108.45],[140.05,107.8]]},
+ {"name":"GND: U10.1 island stitch", "net":"GND","layer":"B.Cu","width":0.3,
+  "vias":[[143.3,112.2]], "via_d":0.6, "via_drill":0.3, "pts":[]},
+ {"name":"GND: island under the LED cathode bend", "net":"GND","layer":"B.Cu","width":0.3,
+  "vias":[[145.6,107.7]], "via_d":0.6, "via_drill":0.3, "pts":[]},
+ {"name":"SHLD1: U4.1 shield pin into the In1 shield zone (between the BTN_DFU and EC_A rows)", "net":"SHLD1","layer":"B.Cu","width":0.2,
+  "vias":[[151.4,98.05]], "via_d":0.5, "via_drill":0.2, "pts":[[151.0,96.65],[151.0,97.65],[151.4,98.05]]},
+ {"name":"3V3: north pour to U8 on B.Cu around the west of U4", "net":"3V3","layer":"B.Cu","width":0.3,
+  "pts":[[150.0,92.35],[150.0,91.25],[148.9,91.25],[148.5,91.65],[148.5,98.3],[149.5,99.3],[149.5,99.78]]},
+ {"name":"3V3: U1.28 on B.Cu to the U8 web instead of a via into a dead pour sliver", "net":"3V3","layer":"B.Cu","width":0.3,
+  "remove_vias":[[141.7,101.6]], "remove_tracks":[[141.7,101.6,143.45,101.6]],
+  "pts":[[143.45,101.6],[144.3,101.6],[146.3,99.6],[149.2,99.6],[149.5,99.3]]},
+ {"name":"3V3: bridge the east sliver to the south pour across LED_STAT, F.Cu link east of U3", "net":"3V3","layer":"F.Cu","width":0.3,
+  "vias":[[156.4,101.95],[156.6,104.8]], "via_d":0.6, "via_drill":0.3,
+  "pts":[[156.4,101.95],[156.4,104.6],[156.6,104.8]]}
+]

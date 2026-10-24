@@ -3,6 +3,40 @@
 Dated work log, newest first. Moved out of STATUS.md on 2026-09-04; the
 2026-08-31 / 09-01 entries are the original STATUS table cells, verbatim.
 
+## 2026-10-17 evening — v2: hand routing reviewed, clearance fixes, 3V3 plane re-joined
+
+Paolo routed by hand in KiCad (two sessions, 01:29–02:20 and 20:40–21:51): R1/R2 moved to y 94.26, R3/R4 beside the FDC, I2C trunk straight across PWR, EC_DRV_HI/LO, SWD, NFC, PIEZO, RING_DATA, LED anodes/cathodes, PAD_DP/DM, PZ_DRV, 1V8, EC_NODE_D, VBAT north, TP21–26 re-spaced; FID1/FID2 deleted. Board at hand-over: 38 unconnected, 10 DRC errors.
+
+File-mode pass afterwards (`routes/fix-2026-10-17-evening*.json`, `gnd-3v3-*.json`, `3v3-links-*.json`, `3v3-south-*.json`, `south-fixes-*.json`, `led850-gate-*.json`):
+- Nine clearance errors fixed by 0.05–0.1 mm via moves (RING_DATA, SDA, 3V3, EC_SENSE_B, BTN_FRESET); FID5 to (136.5,112.3) on its keepout circle, out of ANTENNA_KEEPOUT.
+- GND stitch vias at Q3.2, Q1.2, U10.1; C10 rotated 180° so its GND pad meets the top pour.
+- The PWR_3V3_IN2 pour had been cut into four pieces by the PWR rows. Re-joined on copper: U1.28 and U8 on B.Cu to the C17 via around the west of U4; the south pour fed by an F.Cu rail from the (154.9,101.15) via east of U3 to a via at (157.6,105.55). The dead EXP_00 F.Cu spur and its via at (154.0,103.5) were removed to make room. 3V3 is one net again.
+- LED_850 gate trace re-routed down the Q2.1/Q2.3 gap (0.1 mm module rule) so the pour between Q1.2 and Q2.2 is continuous.
+
+Result: 0 DRC errors, 20 warnings, parity 0, 33 unconnected. Open: 5V ×4, GND ×3 (Q2.2, U1.33, one pour pair), SCL ×3, SDA ×3, EXP_A4 ×2, VBAT ×2, EC_A, EC_SENSE_A, 1V8, EXP_A5, PDM_DATA, PDM_CLK, /RING_D0, OW_DQ, EC_B, RESET, HEATER_EN, PIEZO, IMU_INT, BOOST_EN, NFC1, /PAD_DM.
+
+Finding: with the PWR row band (y 95.95–99.65), the USB/VBUS/VBAT/EXP_01 runs on B.Cu and the EC_A / EC_SENSE_B / LED2_K / CHG_STAT runs on F.Cu, the board has no remaining north–south crossing in the x 137–169 band except the one F.Cu slot east of U3 now used by 3V3. 5V (boost → LED resistors) and HEATER_EN cannot be completed without re-routing one of those; SHLD1 (FDC shield zone) has no legal via spot (0.65 mm gap between disc and ring). Decisions listed in STATUS.md.
+
+## 2026-10-17 — v2: optical LED block re-placed, pin pass 4, south-west copper reset
+
+- Root cause of the south-west stall: the three LED drains and three anode nets (D1–D3 on the top face, east; Q1–Q3 and R5–R7 on the bottom, south-west) had no copper and no route, and D3 at (159.7,100) had no via access at all. Paolo: "feel free to move stuff as long as the pcb will look good at the end".
+- Placement (file mode, `scripts/place_2026-10-17.py`): Q1 rotated 180° (gate pad top-right, fed straight from the module); D1 → (157.3,110.1) under D2; D3 → (153.5,111.95) rot 90 left of D1; R5/R6/R7 flipped to the top face at (160.5,110.5)/(159.4,103.7)/(155.7,112.5) next to their LEDs and the 5V top rail; the old bottom-side 5V bus, its via and top diagonal removed.
+- Pin pass 4: pad 37 → LED_850 (P0.13), pad 39 → LED_WHITE (P0.15), pad 41 stays HEATER_EN (P0.17), pad 48 → LED_365 (P0.24), pad 50 → UART_TX (P1.02). Schematic labels and board pad nets updated; `variant.h` / spec table still to follow.
+- Copper reset south of the module (`routes/sw-cleanup.json`, `se-prep.json`, applied with the new `cl route --allow-opens`): old LED_WHITE/LED_850/LED_365/HEATER_EN routes, the VBAT PWR diagonal + bottom branch + top rail (replaced by a bottom link U7.3 → C25 at y 111.5), nine GND stub vias whose pads keep the bottom pour (Q1.2, Q2.2, Q3.2, pad 33, C10.2, U10.1, D8.1, U7, R17.2, Q4.2), the U5.2 3V3 via moved to (139.0,108.7), CHG_STAT moved to a top-side column. Gates routed: LED_WHITE pad 39 → Q1.1, LED_850 pad 37 → Q2.1, LED_365 pad 48 → Q3.1 (`routes/gates.json`).
+- Board: 0 errors, 6 warnings, parity 0, 61 unconnected. Still open and planned (not applied): VBAT via the north band (`routes/escape-plan.md`), the four-net PWR band, the LED cathode/anode nets in the south-east pocket — handed to Paolo for push-and-shove routing in KiCad.
+
+## 2026-10-16 — v2 routing: GND tidy, 3V3 fan-out, 5V ring, pin swap, module rule area
+
+- New copy `hardware/hardware-puck-carrier-v2/` routed from scratch with CopperLoop (`~/Projects/copperloop`, live IPC edits, kicad-cli gate).
+- GND: one stub + one via per pad (81 redundant pieces removed). 3V3: via per pad, trunk under the FDC disc to C3/C17/U8/C9.
+- 5V LED ring: rounded arcs on F.Cu at r 19.45, steps out to r 22 past the EC finger tips, fed from D9 through one via; ten fan-out vias moved out of its lane. Firmware rule: LEDs off during EC measurement.
+- Pin swaps for module escapes, pass 1: EC_SENSE_A → P0.31 (pad 12), PDM_DATA → P1.11 (pad 4), PDM_CLK → P1.13 (pad 6), BTN_FRESET → P1.15 (pad 8). Pass 2, from the escape plan (`hardware-puck-carrier-v2/routes/escape-plan.md`): CHG_STAT → P0.04 (pad 20), BTN_DFU → P0.06 (pad 22), LED_STAT → P0.08 (pad 24), SDA → P1.09 (pad 26), LED_850 → P1.02 (pad 50), OW_DQ → P1.10 (pad 3). `variant.h`, spec table, STATUS updated. Pass 3: SDA → P0.00 (pad 17), BTN_DFU → P0.01 (pad 18), EXP_00 → P0.04 (pad 20), EXP_01 → P0.06 (pad 22), CHG_STAT → P1.09 (pad 26), so SCL, SDA and BTN_DFU leave the module northward and the other four take the south lane.
+- C3 → 4.7 µF 0805 relocated to (139.3, 91.5) next to U9; R17 to the old R31 spot north of U7; D8/R31 shifted; R11 0.4 mm west. The corridor between the module and the FDC is free of power feeds.
+- Rule area MODULE_RULES (B.Cu, x 137.4–146.2, y 93.4–106.6) with `.kicad_dru`: 0.1 mm trace/clearance (EC nets 0.15); project minimums 0.1 mm, via 0.45 / 0.2 hole (JLC 4-layer 0.09).
+- Board state: 0 DRC errors, parity 0, 109 unconnected (all signals), power and planes complete.
+- Evening, KiCad closed, file mode (`cl route SPEC --board FILE --apply`, scratch copy + kicad-cli gate, board copied back only on PASS): pull-ups R1/R2 moved to (157.4/156.3, 96.4) with a shared 3V3 via; I2C north (U4.9/U4.10 vias, PWR runs to the lane via and U3.8); east column — SCL/SDA up the C3 corridor onto PWR rows y 94.35/92.95, EXP_00/EXP_01/LED_STAT/CHG_STAT down 0.1 mm columns x 144.45–145.35 into 0.1 mm lane rows y 102.95–103.85, staircase vias at x 153.3–154.75, PWR to TP25/TP26 (back on B.Cu at x 157.7/158.4), R31.1 and U7.1; LED pull-downs R8/R9/R10 (LED_WHITE around the fiducial keepout and under the ring, LED_850 via at (140.0,113.6), LED_365 on B.Cu); SCL PWR column at x 155.55 cut back to y 97.2 with an F.Cu stub from the R2.2 via into U3.2 (frees the PWR layer east of the FDC between y 97.6 and 102.6); VBAT via west of U2 moved to (155.5,89.15) so U2.2 can exit; BOOST_EN U2.2 ↔ R33.1 via a PWR hop; HEATER_EN Q4.1 ↔ R12.1. Specs in `routes/` (pullups, i2c-north, east-column + gen, leds, scl-rework, east-links). Board: 0 errors, 4 warnings, parity 0, 53 unconnected (was 67).
+- Blocked, needs a decision: HEATER_EN (41), EC_DRV_LO (46), EC_DRV_HI (45), BOOST_EN (44) from the module south row. The module has a third pad column (56–61, x 136.55–137.15, y 97.8–102.2), so there is no legal via spot under the body for four nets at 0.3 pitch, and the hand-routed LED_850 (PWR y 104.95) and LED_WHITE (PWR L at x 140.6 / y 107.55) plus the Q1/Q2/Q3 GND vias fence the PWR south band. Draft kept in `routes/sw-bundle-draft.json` (east halves are valid). Options in `routes/escape-plan.md`.
+
 ## 2026-10-12 — rounded copper and verified connectivity fixes, 28 → 21 opens
 
 - Saved PCB: **0 DRC errors, 0 DRC warnings, 0 parity issues, 21 opens**

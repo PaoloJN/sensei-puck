@@ -1,0 +1,8 @@
+[
+ {"name":"3V3: C10 flipped (GND pad now faces the open top pour); re-stub C10.1", "net":"3V3","layer":"F.Cu","width":0.3,
+  "remove_tracks":[[142.2,111.48,141.67,110.95]],
+  "pts":[[141.67,110.95],[142.1,110.52],[142.2,110.52]]},
+ {"name":"3V3: hop from the In2 sliver under the module down to the U5.2 stub on F.Cu, dodging the band vias", "net":"3V3","layer":"F.Cu","width":0.3,
+  "vias":[[139.4,102.1]], "via_d":0.6, "via_drill":0.3,
+  "pts":[[139.4,102.1],[138.9,102.6],[138.75,102.75],[138.75,104.75],[138.6,104.9],[138.6,106.5],[138.7,106.6],[139.5,106.6],[139.5,108.3],[139.3,108.5]]}
+]

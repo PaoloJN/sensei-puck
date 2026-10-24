@@ -1,0 +1,11 @@
+[
+ {"name":"3V3: C10 flipped; re-stub C10.1 from the F rail", "net":"3V3","layer":"F.Cu","width":0.3,
+  "pts":[[141.67,110.95],[142.1,110.52],[142.2,110.52]]},
+ {"name":"EXP_00: drop the dead F.Cu spur and its dangling via at (154.0,103.5)", "net":"EXP_00","layer":"F.Cu","width":0.2,
+  "remove_vias":[[154.0,103.5]],
+  "remove_tracks":[[154.0,103.5,155.15,102.35],[155.15,102.35,158.1,102.35],[158.1,102.35,158.5,102.75]],
+  "pts":[]},
+ {"name":"3V3: feed the south In2 pour: F.Cu rail from the (154.9,101.15) via east of U3, over the CHG_STAT corner, via at (157.6,105.55)", "net":"3V3","layer":"F.Cu","width":0.3,
+  "vias":[[157.6,105.55]], "via_d":0.6, "via_drill":0.3,
+  "pts":[[154.9,101.15],[155.0,101.25],[155.0,104.4],[157.5,104.4],[157.5,105.45],[157.6,105.55]]}
+]

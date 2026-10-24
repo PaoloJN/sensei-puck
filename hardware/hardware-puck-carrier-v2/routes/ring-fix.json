@@ -1,0 +1,5 @@
+[
+ {"name": "Q5.2 GND joins the existing via at (133.6,85.95); via in the LED data lane removed", "net": "GND", "layer": "B.Cu", "width": 0.4,
+  "remove_vias": [[134.75, 86.3]], "remove_tracks": [[134.2, 86.85, 134.75, 86.3]],
+  "pts": [[133.66, 86.85], [133.6, 86.5], [133.6, 85.95]]}
+]

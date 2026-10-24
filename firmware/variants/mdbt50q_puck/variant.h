@@ -80,33 +80,33 @@ extern "C"
  * button-pin blacklist (not IMU_INT, not PDM, not externally driven). The
  * bootloader board.h must use these same numbers.
  */
-#define PIN_LED1             (12)   // P0.12 — D8 status LED, net LED_STAT
+#define PIN_LED1             (8)    // P0.08 (module pad 24) — D8 status LED, net LED_STAT; moved from P0.12 (2026-10-16 pass 2)
 #define LED_BUILTIN          PIN_LED1
 #define LED_CONN             PIN_LED1
 #define LED_RED              PIN_LED1
 #define LED_BLUE             PIN_LED1
 #define LED_STATE_ON         (1)    // active high (drives D8 through R31)
 
-#define PIN_BTN_DFU          (40)   // P1.08 — TP21, tweezer-to-GND forces DFU
-#define PIN_BTN_FRESET       (41)   // P1.09 — TP22, factory-reset button pad
+#define PIN_BTN_DFU          (1)   // P0.01 (module pad 18) — TP21, tweezer-to-GND forces DFU; pass 3
+#define PIN_BTN_FRESET       (47)   // P1.15 (module pad 8) — TP22, factory-reset button pad; moved from P1.09 for routing (2026-10-16)
 
 // Expansion pads (bottom east rim, 2026-09-04): spare pins on 4 SMD pads. 3V3/GND on the SWD row.
 #define PIN_EXP_A4      (28)   // P0.28 / AIN4 — TP23 (v2 pH probe candidate)
 #define PIN_EXP_A5      (29)   // P0.29 / AIN5 — TP24
-#define PIN_EXP_00      (0)    // P0.00 (XL1; free because USE_LFRC) — TP25
-#define PIN_EXP_01      (1)    // P0.01 (XL2) — TP26
+#define PIN_EXP_00           (4)   // P0.04 (module pad 20) — TP25; pass 3
+#define PIN_EXP_01           (6)   // P0.06 (module pad 22) — TP26; pass 3
 
 /*
  * Analog pins — SAADC channel order (AIN0..AIN7)
  */
 #define PIN_A0               (2)    // P0.02 AIN0 = EC_A
 #define PIN_A1               (3)    // P0.03 AIN1 = EC_B
-#define PIN_A2               (4)    // P0.04 AIN2 = EC_SENSE_A
+#define PIN_A2               (4)    // P0.04 AIN2 = EXP_00 (digital) since the 2026-10-16 pin passes
 #define PIN_A3               (5)    // P0.05 AIN3 = EC_SENSE_B
 #define PIN_A4               (28)   // P0.28 AIN4 — EXP_A4 pad TP23 (spare, freed by EC-drive move)
 #define PIN_A5               (29)   // P0.29 AIN5 — spare (freed by EC-drive move)
 #define PIN_A6               (30)   // P0.30 AIN6 — EC_BIAS_EN (slow GPIO)
-#define PIN_A7               (31)   // P0.31 AIN7 = UVC_PD (DNP, v2)
+#define PIN_A7               (31)   // P0.31 AIN7 = EC_SENSE_A (since the 2026-10-16 pin swap)
 
 static const uint8_t A0  = PIN_A0 ;
 static const uint8_t A1  = PIN_A1 ;
@@ -122,7 +122,7 @@ static const uint8_t A7  = PIN_A7 ;
  * Serial interfaces — debug UART on test points only
  */
 #define PIN_SERIAL1_RX       (25)   // P0.25 UART_RX
-#define PIN_SERIAL1_TX       (24)   // P0.24 UART_TX
+#define PIN_SERIAL1_TX       (34)   // P1.02 (module pad 50) UART_TX, reserved label; pin pass 4 (2026-10-17), was P0.24
 
 /*
  * SPI Interfaces — NO SPI bus on the puck (everything is I2C/PDM/1-wire).
@@ -145,7 +145,7 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
  */
 #define WIRE_INTERFACES_COUNT 1
 
-#define PIN_WIRE_SDA         (26)   // P0.26
+#define PIN_WIRE_SDA         (0)   // P0.00 (module pad 17); third assignment pass 2026-10-16, escape plan
 #define PIN_WIRE_SCL         (27)   // P0.27
 
 #define PIN_SDA              PIN_WIRE_SDA
@@ -158,7 +158,7 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 // EC front end — 4-electrode cell
 #define PIN_EC_A             (2)    // P0.02 AIN0 — force node E3 (2-el. fallback)
 #define PIN_EC_B             (3)    // P0.03 AIN1 — force node E4 (2-el. fallback)
-#define PIN_EC_SENSE_A       (4)    // P0.04 AIN2 — inner sense electrode E1 (4-wire)
+#define PIN_EC_SENSE_A       (31)   // P0.31 AIN7 (module pad 12) — inner sense electrode E1 (4-wire); moved from P0.04 for routing (2026-10-16)
 #define PIN_EC_SENSE_B       (5)    // P0.05 AIN3 — inner sense electrode E2 (4-wire)
 #define PIN_EC_DRV_LO        (22)   // P0.22 — 1 kOhm range drive (H0H1 high-drive)
 #define PIN_EC_DRV_HI        (23)   // P0.23 — 100 kOhm range drive (H0H1 high-drive)
@@ -166,22 +166,22 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 #define PIN_RING_DATA       (32)   // P1.00 — XL-1010 ring; LOW while boost is off
 
 // Illumination FET gates (loads on 5 V boost rail)
-#define PIN_LED_WHITE        (13)   // P0.13 — Q1 gate
-#define PIN_LED_850          (14)   // P0.14 — Q2 gate (850 nm scatter turbidity)
-#define PIN_LED_365          (15)   // P0.15 — Q3 gate (365 nm)
+#define PIN_LED_WHITE        (15)   // P0.15 (module pad 39) — Q1 gate; pin pass 4 (2026-10-17), was P0.13
+#define PIN_LED_850          (13)   // P0.13 (module pad 37) — Q2 gate (850 nm scatter turbidity); pin pass 4 (2026-10-17), was P1.02
+#define PIN_LED_365          (24)   // P0.24 (module pad 48) — Q3 gate (365 nm); pin pass 4 (2026-10-17), was P0.15
 
 // Misc peripherals
-#define PIN_OW_DQ            (16)   // P0.16 — DS18B20 1-wire, 4.7k pull-up to 3V3
+#define PIN_OW_DQ            (42)   // P1.10 (module pad 3) — DS18B20U+ 1-wire; moved from P0.16 (2026-10-16 pass 2)
 #define PIN_HEATER_EN        (17)   // P0.17 — Q4 gate
 #define PIN_PIEZO            (19)   // P0.19 — Q5 gate (low-side FET, load off GPIO)
 #define PIN_BOOST_EN         (20)   // P0.20 — TPS61023 EN
 #define PIN_IMU_INT          (21)   // P0.21 — LSM6DSO INT1 (tilt wake)
-#define PIN_CHG_STAT         (7)    // P0.07 — MCP73832 STAT, open-drain; NOT dock presence
+#define PIN_CHG_STAT         (41)   // P1.09 (module pad 26) — MCP73832 STAT; pass 3
 
 // PDM microphone (IM69D130) — names the core PDM library expects, plus the
 // spec's PIN_PDM_DATA alias
-#define PIN_PDM_CLK          (8)    // P0.08
-#define PIN_PDM_DATA         (6)    // P0.06
+#define PIN_PDM_CLK          (45)   // P1.13 (module pad 6); moved from P0.08 for routing (2026-10-16)
+#define PIN_PDM_DATA         (43)   // P1.11 (module pad 4); moved from P0.06 for routing (2026-10-16)
 #define PIN_PDM_DIN          PIN_PDM_DATA
 #define PIN_PDM_PWR          (-1)   // mic powered from rail, no power gate
 

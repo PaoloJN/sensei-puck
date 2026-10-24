@@ -1,0 +1,14 @@
+(version 1)
+# Fine rules under and around the MDBT50Q module (rule area MODULE_RULES on B.Cu).
+# JLCPCB 4-layer: 0.09 mm trace/space, via 0.2 mm hole / 0.5 mm pad.
+(rule "module_fine"
+	(condition "A.intersectsArea('MODULE_RULES')")
+	(constraint clearance (min 0.1mm))
+	(constraint track_width (min 0.1mm)))
+(rule "module_fine_ec"
+	(condition "A.intersectsArea('MODULE_RULES') && A.NetClass == 'ec'")
+	(constraint clearance (min 0.15mm)))
+# Copper pours keep the normal clearance inside the fine area (a 0.1 mm pour gap under pads trips the solder-mask check).
+(rule "module_fine_pour"
+	(condition "A.intersectsArea('MODULE_RULES') && (A.Type == 'Zone' || B.Type == 'Zone')")
+	(constraint clearance (min 0.2mm)))

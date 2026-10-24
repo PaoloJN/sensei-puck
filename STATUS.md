@@ -5,6 +5,12 @@ No parts have been bought or hardware assembled. Budget ceiling approximately
 $300, maximum two PCB spins. Historical September status is preserved in
 `docs/history/2026-09-paused-baseline/`.
 
+**2026-10-17 evening (v2 board):** 0 DRC errors, parity 0, 33 unconnected after Paolo's hand pass plus the file-mode clean-up (clearances, GND stitches, 3V3 plane re-joined, C10 flipped, FID5 moved). Blocked on decisions: (1) keep or delete TP21–TP24 (BTN_DFU/BTN_FRESET/EXP_A4/EXP_A5 pads behind the EC fingers); (2) 5V north→south needs one F.Cu slot east of the FDC — free it by moving EC_SENSE_B's F.Cu run (y 99.45) or EC_A's F.Cu diagonal to B.Cu; (3) HEATER_EN via at (139.25,105.65) is boxed by EC_DRV_HI/LO on PWR — move Q4/R12 toward the module or re-route EC_DRV_LO; (4) SHLD1 shield zone: tie to GND or accept a 0.45 mm via at 0.1 mm gaps between the FDC disc and ring. See `docs/changelog.md`.
+
+**2026-10-16 v2 board, evening:** 0 DRC errors, parity 0, 53 unconnected after the file-mode routing pass (east column, I2C, LED pull-downs, boost corner); HEATER_EN / EC_DRV_LO / EC_DRV_HI / BOOST_EN blocked pending a placement or pin decision — see `hardware/hardware-puck-carrier-v2/routes/escape-plan.md` and `docs/changelog.md`.
+
+**2026-10-16 pin swaps (v2 board):** pass 1: EC_SENSE_A → P0.31/AIN7 (pad 12), PDM_DATA → P1.11 (pad 4), PDM_CLK → P1.13 (pad 6), BTN_FRESET → P1.15 (pad 8). Pass 2 (escape plan): CHG_STAT → P0.04 (pad 20), BTN_DFU → P0.06 (pad 22), LED_STAT → P0.08 (pad 24), SDA → P1.09 (pad 26), LED_850 → P1.02 (pad 50), OW_DQ → P1.10 (pad 3). Pass 3 (east column, final): SDA → P0.00 (pad 17), BTN_DFU → P0.01 (pad 18), EXP_00 → P0.04 (pad 20), EXP_01 → P0.06 (pad 22), CHG_STAT → P1.09 (pad 26). C3 is a 4.7 µF 0805 moved to the module's north-west corner. Schematic, board, `variant.h` and the spec pin table are updated together; firmware must be rebuilt. v2 also carries a 0.1 mm rule area under the module (`puck-carrier-v2.kicad_dru`) and project minimums 0.1 mm / via 0.45.
+
 ## Completed revisions
 
 - MCP73832 open-drain charger, 100 mA programming and dedicated bypass capacitors.

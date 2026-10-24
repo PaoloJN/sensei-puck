@@ -1,0 +1,8 @@
+[
+ {"name": "SCL: remove the PWR column x 155.55 (y 94.4-102.4) and its bend to the lane via", "net": "SCL", "layer": "In2.Cu", "width": 0.2, "pts": [],
+  "remove_tracks": [[155.55, 102.4, 155.55, 94.4], [155.3, 102.65, 155.55, 102.4]]},
+ {"name": "SCL: PWR column only from the U4 row down to the R2.2 stub at y 97.2", "net": "SCL", "layer": "In2.Cu", "width": 0.2,
+  "pts": [[155.55, 94.4], [155.55, 97.2]]},
+ {"name": "SCL: F.Cu stub from the R2.2 via around U3.1 into U3.2 (joins the U8.13 F run)", "net": "SCL", "layer": "F.Cu", "width": 0.2,
+  "pts": [[156.4, 97.6], [156.65, 97.85], [156.65, 99.35], [156.4, 99.6], [156.06, 99.6]]}
+]
