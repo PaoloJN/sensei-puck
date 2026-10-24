@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "puck-extra")(type "KiCad")(uri "${KIPRJMOD}/lib/symbols/puck-extra.kicad_sym")(options "")(descr "Project-local: MDBT50Q-1MV2 module (U1), FDC1004/MS5837 (SnapEDA), LSM6DSO, PDM mic"))
+)

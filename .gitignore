@@ -28,6 +28,9 @@ Thumbs.db
 .idea/
 *.swp
 
+# Tool caches
+.copperloop/
+
 # Generated fab outputs (re-exportable)
 hardware/*/production/
 hardware/orders/*.zip
@@ -49,6 +52,4 @@ node_modules/
 *.ses
 _scratch_*
 _staged_*
-hardware/hardware-puck-carrier/analysis/*/
-!hardware/hardware-puck-carrier/analysis/manifest.json
 delete/

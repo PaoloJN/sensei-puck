@@ -1,8 +1,0 @@
-[
- {"name": "U9 GND via out of the C3 corridor (west, under U9 body)", "net": "GND", "layer": "F.Cu", "width": 0.3,
-  "remove_vias": [[144.5, 93.3]], "remove_tracks": [[142.48, 93.3, 144.5, 93.3]],
-  "pts": [[142.48, 93.3], [142.48, 94.2]], "vias": [[142.48, 94.2]]},
- {"name": "R14.1 3V3 via moved south of R14, off the north band", "net": "3V3", "layer": "B.Cu", "width": 0.3,
-  "remove_vias": [[145.14, 89.75]], "remove_tracks": [[145.89, 90.5, 145.14, 89.75]],
-  "pts": [[145.89, 90.5], [145.89, 91.45]], "vias": [[145.89, 91.45]]}
-]

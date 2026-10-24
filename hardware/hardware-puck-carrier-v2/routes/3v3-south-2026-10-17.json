@@ -1,5 +1,0 @@
-[
- {"name":"3V3: feed the south In2 pour from the U8 web, B.Cu down x 153.3 and a via below the LED2 cathode run", "net":"3V3","layer":"B.Cu","width":0.3,
-  "vias":[[154.3,107.6]], "via_d":0.6, "via_drill":0.3,
-  "pts":[[153.02,101.5],[153.3,101.78],[153.3,106.9],[154.0,107.6],[154.3,107.6]]}
-]

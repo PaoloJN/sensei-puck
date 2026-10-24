@@ -1,5 +1,5 @@
 // EC front-end bring-up (protoboard stage — before the carrier exists).
-// Wiring per hardware/carrier-board-spec.md:
+// Wiring per hardware/board-spec.md:
 //   D1 --1k--+          D2 --100k--+
 //            +--[electrode A ... water ... electrode B]-- GND-side sense
 //   D0 = ADC on electrode A node, D3 = ADC on electrode B node

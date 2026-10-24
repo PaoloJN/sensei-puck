@@ -1,4 +1,4 @@
-# Water Puck firmware
+# Sensei Puck firmware
 
 The default target is `mdbt50q_puck`, the bare Raytac module on the carrier.
 `puck` and `bench_*` target the XIAO bench board. Run PlatformIO from this directory.
@@ -19,8 +19,8 @@ pio run -e mdbt50q_puck -e puck
 - A commissioning idle image reports uptime, REGOUT0 and USB VBUS detection.
   A wrong non-default REGOUT0 setting reports `STOP_CHECK_3V3`.
 
-Carrier, XIAO, I2C scan, RF beacon and EC bench builds passed on 2026-10-11. No image has been flashed to a
-carrier, and idle current/charge termination have not been measured.
+Carrier, XIAO, I2C scan, RF beacon and EC bench builds passed on 2026-10-11.
+No image was ever flashed to a carrier; no carrier was built.
 
 ## Not implemented
 
@@ -48,8 +48,8 @@ four-wire measurement, synchronous SAADC sampling or conductivity accuracy.
 ## Commissioning and recovery
 
 Use SWD for initial programming and keep the SWD/reset pads accessible. A custom
-Adafruit bootloader with `USE_NFCT = yes`, LFRC, P0.18 reset, P1.08 DFU and P1.09
-factory-reset buttons still needs to be built and tested. Measure the sensor rail
+Adafruit bootloader with `USE_NFCT = yes`, LFRC, P0.18 reset, P0.01 DFU and P1.15
+factory-reset pads was never built. Measure the sensor rail
 and inspect UICR after first boot and every erase. Prove app-initiated DFU and
 recovery from an invalid/crashing application before sealing; a working-app-only
-update path is insufficient. See [validation plan](../docs/validation-plan.md).
+update path is insufficient.

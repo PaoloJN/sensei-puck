@@ -1,5 +1,5 @@
 /*
-  Water Puck carrier board variant — Raytac MDBT50Q-1MV2 (nRF52840, bare module).
+  Sensei Puck carrier board variant — Raytac MDBT50Q-1MV2 (nRF52840, bare module).
 
   Based on the Adafruit nRF52 BSP `pca10056` variant (nRF52840-DK), which uses
   the full 48-pin identity map — the standard bare-module convention:
@@ -10,11 +10,11 @@
   So the macros below can be read straight off the schematic: pin 26 is P0.26,
   pin 41 is P1.09, etc.
 
-  Pin map source of truth: hardware/carrier-board-spec.md ("Pin map" section).
+  Pin map source of truth: hardware/board-spec.md ("Pin map" section).
   Update BOTH files together when nets move.
 
   ---------------------------------------------------------------------------
-  SAFETY / COMMISSIONING NOTES (carrier-board-spec.md, review items C2 etc.)
+  SAFETY / COMMISSIONING NOTES (board-spec.md, review items C2 etc.)
   ---------------------------------------------------------------------------
   1. LF clock: **USE_LFRC only.** The MDBT50Q-1MV2 has NO 32.768 kHz crystal.
      Never copy USE_LFXO from the XIAO (or pca10056/raytac_rx) variants — the
@@ -152,7 +152,7 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 #define PIN_SCL              PIN_WIRE_SCL
 
 /*----------------------------------------------------------------------------
- *  Puck net map (hardware/carrier-board-spec.md "Pin map")
+ *  Puck net map (hardware/board-spec.md "Pin map")
  *----------------------------------------------------------------------------*/
 
 // EC front end — 4-electrode cell

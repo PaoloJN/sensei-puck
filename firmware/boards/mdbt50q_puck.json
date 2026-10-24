@@ -13,7 +13,7 @@
         "0x8029"
       ]
     ],
-    "usb_product": "Water Puck (MDBT50Q)",
+    "usb_product": "Sensei Puck (MDBT50Q)",
     "mcu": "nrf52840",
     "variant": "mdbt50q_puck",
     "variants_dir": "variants",
@@ -40,7 +40,7 @@
   "frameworks": [
     "arduino"
   ],
-  "name": "Water Puck carrier (Raytac MDBT50Q-1MV2, nRF52840)",
+  "name": "Sensei Puck carrier (Raytac MDBT50Q-1MV2, nRF52840)",
   "upload": {
     "maximum_ram_size": 248832,
     "maximum_size": 815104,

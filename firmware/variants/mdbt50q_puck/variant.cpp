@@ -1,5 +1,5 @@
 /*
-  Water Puck carrier board variant — Raytac MDBT50Q-1MV2 (nRF52840).
+  Sensei Puck carrier board variant — Raytac MDBT50Q-1MV2 (nRF52840).
   Identity pin map (Arduino N == P0.N, 32+N == P1.N), copied from the
   Adafruit BSP pca10056 variant. See variant.h for the net map and the
   USE_LFRC / no-DCDC / REGOUT0 commissioning notes.
